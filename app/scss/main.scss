@@ -256,6 +256,12 @@ body {
   z-index: 11;
 }
 
+.header__slider-wrap--fix {
+  .header__top {
+    position: static;
+  }
+}
+
 .contain {
 }
 

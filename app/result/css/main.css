@@ -626,6 +626,9 @@ body {
   width: 100%;
   z-index: 11; }
 
+.header__slider-wrap--fix .header__top {
+  position: static; }
+
 .header__top-inner {
   display: -webkit-flex;
   display: -ms-flexbox;

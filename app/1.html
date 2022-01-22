@@ -59,6 +59,34 @@
                   <div class="slider__content-inn">
                     <div class="slider__title">0% рассрочка</div>
                     <div class="slider__subtitle">на 2 года</div>            
+                    <a href="#" class="slider__btn">Заказать</a>                    
+                  </div>                   
+                </div><!--slider__content-->
+              </div>
+            </div>            
+          </div><!--slide-->
+          <div class="slider__slide">
+            <img src="img/slide-2.jpg" alt="" class="slider__img">
+            <div class="slider__slide-inn">
+              <div class="contain">
+                <div class="slider__content">
+                  <div class="slider__content-inn">
+                    <div class="slider__title">Кухни на заказ</div>
+                    <div class="slider__subtitle">Скидки до 60%  на кухни <br>с яркими фасадами</div>            
+                    <a href="#" class="slider__btn">Заказать</a>                        
+                  </div>
+                </div><!--slider__content-->
+              </div>
+            </div>
+          </div><!--slide-->
+          <div class="slider__slide">
+            <img src="img/slide-1.jpg" alt="" class="slider__img">
+            <div class="slider__slide-inn">              
+              <div class="contain">
+                <div class="slider__content">                
+                  <div class="slider__content-inn">
+                    <div class="slider__title">0% рассрочка</div>
+                    <div class="slider__subtitle">на 2 года</div>            
                     <a href="#" class="slider__btn">Заказать</a>                        
                   </div>
                 </div>
@@ -73,12 +101,23 @@
                   <div class="slider__content-inn">
                     <div class="slider__title">Кухни на заказ</div>
                     <div class="slider__subtitle">Скидки до 60%  на кухни <br>с яркими фасадами</div>            
-                    <a href="#" class="slider__btn">Заказать</a>                        
+                    <a href="#" class="slider__btn">Заказать</a>
                   </div>
                 </div>
               </div>
+            </div>            
+          </div><!--slide-->          
+        </div>
+        <div class="slider__nums rcpadding">
+          <div class="slider__current">0<span>1</span></div>          
+          <div class="slider__count">/<span></span></div>
+        </div>
+        <div class="divider__wrapper">
+          <div class="contain">
+            <div class="divider__inner">
+              <div class="slider__divider"></div>
             </div>
-          </div><!--slide-->
+          </div>
         </div>
       </div><!--header__slider-wrap-->
     </header>
@@ -352,64 +391,43 @@
         </div>
       </div>
 
-
-      <div class="contain">
-        <div class="reviews__item">
-          <div class="reviews__img-w">
-            <img src="img/rev-1.jpg" class="reviews__img" alt="">
-            <svg width="156" height="137" viewBox="0 0 156 137" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <clipPath id="review-clip">  
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M130.1 101.004C117.175 116.785 103.524 134.104 81.6243 136.295C58.6655 138.593 37.0371 127.192 21.6203 111.86C6.37288 96.697 -1.68585 76.8026 1.65798 56.7702C5.05453 36.422 18.6999 18.4726 38.892 8.38835C59.1565 -1.73214 83.4282 -2.3582 105.225 5.04676C127.68 12.6752 148.893 26.8245 154.275 47.5864C159.388 67.3105 143.469 84.6794 130.1 101.004Z" fill="#C4C4C4"/>
-              </clipPath>
-            </svg>
+      <div class="reviews-text-blue-bg">
+        <div class="reviews__slider-section">
+          <div class="contain contain--slider">
+            <div class="heading">Отзывы клиентов</div>
+            <div class="reviews__slider">
+              @@include('var/_reviews-item.html',{
+                "img":"rev-min-1.jpg"
+              })
+              @@include('var/_reviews-item.html',{
+                "img":"rev-min-2.jpg"
+              })
+              @@include('var/_reviews-item.html',{
+                "img":"rev-min-3.jpg"
+              })
+              @@include('var/_reviews-item.html',{
+                "img":"rev-min-2.jpg"
+              })
+            </div><!--slider-->
           </div>
-          <div class="reviews__content">
-            <div class="reviews__title">Екатерина Романова</div>
-            <div class="reviews__date">21 сентября 2021</div>
-            <div class="reviews__text">
-              Нет, вы действительно можете купить кухню по доступной цене. Гарантия этому – наше личное производство. Мы не перепродаем товар, благодаря чему вы экономите. Один из самых дешевых вариантов стоит всего 40 000 рублей. При этом он
-              соответствует международным стандартам и не уступает по качеству другим моделям.
-            </div>
-            <div class="stars">
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star star--empty"></div>
-            </div>
-          </div>
-        </div>
+        </div><!--reviews__slider-section-->      
 
-        <div class="reviews__item reviews__item--min">
-          <div class="reviews__img-w reviews__img-w--min">
-            <img src="img/rev-min-1.jpg" class="reviews__img--min" alt="">
-            <svg width="93" height="83" viewBox="0 0 93 83" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <clipPath id="review-clip-min">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M77.6078 60.9127C69.9163 70.3043 61.7923 80.6105 48.7596 81.9148C35.0966 83.2821 22.2253 76.4973 13.0506 67.3733C3.97673 58.3495 -0.819096 46.5102 1.17085 34.5887C3.19217 22.4793 11.3127 11.7974 23.3292 5.79619C35.3888 -0.226612 49.8331 -0.599184 62.8048 3.80757C76.1679 8.34732 88.7918 16.7677 91.9947 29.1233C95.0375 40.8613 85.5642 51.1977 77.6078 60.9127Z" fill="#0D9E57"/>
-              </clipPath>
-            </svg>
-
-            
-            
+        <div class="content">
+          <div class="contain">
+            <div class="heading heading--content">Производство кухонь в Санкт-Петербурге, Всеволожске, Колпино</div>    
+            <p>Красивая, практичная и уютная кухня по индивидуальным размерам. Все находится под рукой, мебель экономит место, вы получаете удовольствие от того, что готовите там или просто собирайтесь всей семьей за одним столом. Это то, о чем вы мечтали? Тогда наша мебельная фабрика “Моя кухня” к вашим услугам!</p>
+            <br>
+            <br>
+            <div class="heading heading--content">Приобрести недорогую кухню: это из области фантастики?</div>    
+            <p>Нет, вы действительно можете купить кухню по доступной цене. Гарантия этому – наше личное производство. Мы не перепродаем товар, благодаря чему вы экономите. Один из самых дешевых вариантов стоит всего 40 000 рублей. При этом он соответствует международным стандартам и не уступает по качеству другим моделям.
+            </p>
+            <p>Вообразите, что вам пришлось приобрести кухонную мебель. Что вы делаете в первую очередь? Правильно, идете в стационарный магазин. Там не находите ни одного подходящего варианта. Потом едете в другой салон. Там тоже ничего не нравится. Но вам уже надоело выбирать, да и кухня все-таки нужна, хоть какая-то. Вот вы и покупаете «хоть какую-то». Дополнительно ищите компанию, которые транспортирует и установит кухню. В результате будет счастье, если она точно подойдет по размерам и все коммуникации будут установлены правильно. А в большинстве случаев в конце концов все идет коту под хвост, деньги потрачены, нервы «съедены», сил нет, желания тоже. Кто-то что-то сделал не так, не те замеры, повреждения при транспортировке и тут вы понимаете, что лучше было обратиться к нам.</p>
           </div>
-          <div class="reviews__content">
-            <div class="reviews__title">Екатерина Романова</div>
-            <div class="reviews__date">21 сентября 2021</div>
-            <div class="reviews__text">
-              Нет, вы действительно можете купить кухню по доступной цене. Гарантия этому – наше личное производство. Мы не перепродаем товар, благодаря чему вы экономите. Один из самых дешевых вариантов стоит всего 40 000 рублей. При этом он
-              соответствует международным стандартам и не уступает по качеству другим моделям.
-            </div>
-            <div class="stars">
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star star--empty"></div>
-            </div>
-          </div>
-        </div>
-
-      </div>
+        </div><!--content-->
+      </div><!--reviews-text-blue-bg-->
+      @@include('var/_answers.html')
+      @@include('var/_hform.html')
+      @@include('var/_footer.html')
 
     </main>
     <footer class="footer">      

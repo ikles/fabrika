@@ -33,8 +33,8 @@ $('.eye-3').click(function (e) {
   $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
 
-});*/
-
+});
+*/
 /************************************/
 
 
@@ -92,17 +92,50 @@ if($('select').length) {
 
 
 $('.header__slider').slick({            
-    infinite: true,
-    centerMode: false,
-    slidesToShow: 1,
-    speed: 600,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 4000,
-    cssEase: 'ease-out',
-    dots: false,
-    variableWidth: false,   
-  });
+  infinite: true,
+  centerMode: false,
+  slidesToShow: 1,
+  speed: 600,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 4000,
+  cssEase: 'ease-out',
+  dots: false,
+  variableWidth: false,   
+});
+
+let currentSlide = $('.header__slider').slick('slickCurrentSlide') + 1;
+let slideCount = $(".header__slider").slick("getSlick").slideCount;
+let sliderCurrent = $('.slider__current').find('span');
+let sliderCount = $('.slider__count').find('span');
+
+
+
+sliderCount.text(slideCount);
+
+$('.header__slider').on('afterChange', function(event, slick, currentSlide, nextSlide) {
+  sliderCurrent.html(currentSlide + 1);
+});
+
+
+$('.reviews__slider').slick({            
+  infinite: true,
+  centerMode: false,
+  slidesToShow: 3,
+  speed: 600,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 4000,
+  cssEase: 'ease-out',
+  dots: false,
+  variableWidth: false,   
+});
+
+
+$('.answers__header').click(function () {
+  $(this).toggleClass('active-header');
+  $(this).next().slideToggle().toggleClass('open-content');
+});
 
 }); //ready
 

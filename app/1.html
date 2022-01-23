@@ -181,256 +181,158 @@
         </div>      
 
         <div class="benef">
-          <div class="contain">
-            <div class="benef__row">
-              <div class="benef__col">
-                <a href="" class="benef__item benef__item--1">
-                  <div class="benef__title">Свое производство</div>
-                  <div class="benef__text">Красивая, практичная и уютная кухня по индивидуальным размерам. Все находится под рукой</div>
-                  <span class="red-arrow"></span>
-                </a>
-              </div>
-              <div class="benef__col">
-                <a href="" class="benef__item benef__item--2">
-                  <div class="benef__title">Рассрочка 0%</div>
-                  <div class="benef__text">Красивая, практичная и уютная кухня по индивидуальным размерам. Все находится под рукой</div>
-                  <span class="red-arrow"></span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+         @@include('var/_benef.html')
+       </div>
 
-        <div class="coupe">
-          <div class="contain">
-            <div class="heading__wrap">
-              <div class="heading">Шкафы купе</div>
-              <a href="" class="heading__link">Посмотреть все</a>
-            </div>
-            <div class="product__row coupe__row">
-              <div class="product__col coupe__col">
-                @@include('var/_card__item.html',{
-                  "title": "Кухня &quot;Перама&quot;",
-                  "price": "187 000 ₽",
-                  "img": "card-1.jpg"
-                })
-              </div>
-              <div class="product__col coupe__col">
-                @@include('var/_card__item.html',{
-                  "title": "Кухня &quot;Перама&quot;",
-                  "price": "187 000 ₽",
-                  "img": "card-2.jpg"
-                })
-              </div>
-              <div class="product__col coupe__col">
-                @@include('var/_card__item.html',{
-                  "title": "Кухня &quot;Перама&quot;",
-                  "price": "187 000 ₽",
-                  "img": "card-3.jpg"
-                })
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="bens">
-          <div class="contain">
-            <div class="bens__row">
-              <div class="bens__item">
-                <div class="bens__img-wrap"><img src="img/bens-1.svg" class="bens__img" /></div>
-                <div class="bens__content">
-                  <div class="bens__title">Наши магазины</div>
-                  <div class="bens__text">Мы всегда рады вас <br> обслужить в магазине</div>
-                </div>
-              </div>
-              <div class="bens__item">
-                <div class="bens__img-wrap"><img src="img/bens-2.svg" class="bens__img" /></div>
-                <div class="bens__content">
-                  <div class="bens__title">СЕРВИС ДОСТАВКИ</div>
-                  <div class="bens__text">Отправка в любой <br> город России</div>
-                </div>
-              </div>
-              <div class="bens__item">
-                <div class="bens__img-wrap"><img src="img/bens-3.svg" class="bens__img" /></div>
-                <div class="bens__content">
-                  <div class="bens__title">Удобная оплата</div>
-                  <div class="bens__text">Оплата при получении <br> или на счет</div>
-                </div>
-              </div>
-              <div class="bens__item">
-                <div class="bens__img-wrap"><img src="img/bens-4.svg" class="bens__img" /></div>
-                <div class="bens__content">
-                  <div class="bens__title">Качество</div>
-                  <div class="bens__text">Более 15000 видов <br> материалов</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="cabinet">
-          <div class="contain">
-            <div class="heading__wrap">
-              <div class="heading">Корпусная мебель</div>
-              <a href="" class="heading__link">Посмотреть все</a>
-            </div>
-            <div class="product__row cabinet__row">
-              <div class="product__col cabinet__col">
-                @@include('var/_card__item.html',{
-                  "title": "Кухня &quot;Перама&quot;",
-                  "price": "187 000 ₽",
-                  "img": "card-1.jpg"
-                })
-              </div>
-              <div class="product__col cabinet__col">
-                @@include('var/_card__item.html',{
-                  "title": "Кухня &quot;Перама&quot;",
-                  "price": "187 000 ₽",
-                  "img": "card-2.jpg"
-                })
-              </div>
-              <div class="product__col cabinet__col">
-                @@include('var/_card__item.html',{
-                  "title": "Кухня &quot;Перама&quot;",
-                  "price": "187 000 ₽",
-                  "img": "card-3.jpg"
-                })
-              </div>
-            </div>
-          </div>
-        </div>
-      </div><!--gradient-bg-->
-
-      <div class="last-projects">
+       <div class="coupe">
         <div class="contain">
-          <div class="heading">Последние выполненные работы</div>
-          <div class="last-projects__row">
-            <div class="last-projects__col">
-              <div class="last-projects__item">
-                <a href="" class="last-projects__img-wrap">
-                  <img src="img/last-1.jpg" class="last-projects__img">
-                  <span class="red-arrow"></span>
-                </a>
-                <a href="" class="last-projects__title">Кухня "Малия" Яркий и красивый
-                цвет гарнитура</a>
-                <div class="last-projects__text">Собственное производство с современным оборудованием, опытные специалисты на всех этапах создания</div>
-              </div>
-            </div><!--col-->
-            <div class="last-projects__col">
-              <div class="last-projects__item">
-                <a href="" class="last-projects__img-wrap"><img src="img/last-2.jpg" class="last-projects__img"><span class="red-arrow"></span></a>
-                <a href="" class="last-projects__title">Кухня "Малия" Яркий и красивый
-                цвет гарнитура</a>
-                <div class="last-projects__text">Собственное производство с современным оборудованием, опытные специалисты на всех этапах создания</div>
-              </div>
-            </div><!--col-->
-            <div class="last-projects__col">
-              <div class="last-projects__item">
-                <a href="" class="last-projects__img-wrap"><img src="img/last-3.jpg" class="last-projects__img"><span class="red-arrow"></span></a>
-                <a href="" class="last-projects__title">Кухня "Малия" Яркий и красивый
-                цвет гарнитура</a>
-                <div class="last-projects__text">Собственное производство с современным оборудованием, опытные специалисты на всех этапах создания</div>
-              </div>
-            </div><!--col-->
+          <div class="heading__wrap">
+            <div class="heading">Шкафы купе</div>
+            <a href="" class="heading__link">Посмотреть все</a>
           </div>
-        </div>
-      </div><!--last-->
-
-      <div class="advantages">
-        <div class="contain">
-          <div class="advantages__row">
-            <div class="advantages__col">
-              <a href="" class="advantages__item">
-                <div class="advantages__img-w"><img src="img/advantages-1.jpg" class="advantages__img" /></div>
-                <div class="advantages__content">
-                  <div class="advantages__title">Большой выбор <br> Фасадов</div>
-                  <div class="advantages__text">От МДФ Плёнки до Массива, разнообразие цветов и текстур на любой вкус. 300 + вариантов цветов и текстур.</div>
-                </div>
-                <span class="red-arrow red-arrow--big"></span>
-              </a><!--item-->
+          <div class="product__row coupe__row">
+            <div class="product__col coupe__col">
+              @@include('var/_card__item.html',{
+                "title": "Кухня &quot;Перама&quot;",
+                "price": "187 000 ₽",
+                "img": "card-1.jpg"
+              })
             </div>
-            <div class="advantages__col">
-              <a href="" class="advantages__item">
-                <div class="advantages__img-w"><img src="img/advantages-2.jpg" class="advantages__img" /></div>
-                <div class="advantages__content">
-                  <div class="advantages__title">Собственное <br>
-                  производство</div>
-                  <div class="advantages__text">От МДФ Плёнки до Массива, разнообразие цветов и текстур на любой вкус. 300 + вариантов цветов и текстур.</div>
-                </div>
-                <span class="red-arrow red-arrow--big"></span>
-              </a><!--item-->
+            <div class="product__col coupe__col">
+              @@include('var/_card__item.html',{
+                "title": "Кухня &quot;Перама&quot;",
+                "price": "187 000 ₽",
+                "img": "card-2.jpg"
+              })
             </div>
-            <div class="advantages__col">
-              <a href="" class="advantages__item">
-                <div class="advantages__img-w"><img src="img/advantages-3.jpg" class="advantages__img" /></div>
-                <div class="advantages__content">
-                  <div class="advantages__title">Экологические <br>
-                  материалы</div>
-                  <div class="advantages__text">От МДФ Плёнки до Массива, разнообразие цветов и текстур на любой вкус. 300 + вариантов цветов и текстур.</div>
-                </div>
-                <span class="red-arrow red-arrow--big"></span>
-              </a><!--item-->
-            </div>
-            <div class="advantages__col">
-              <a href="" class="advantages__item">
-                <div class="advantages__img-w"><img src="img/advantages-4.jpg" class="advantages__img" /></div>
-                <div class="advantages__content">
-                  <div class="advantages__title">Надёжная  <br>
-                  Фурнитура</div>
-                  <div class="advantages__text">От МДФ Плёнки до Массива, разнообразие цветов и текстур на любой вкус. 300 + вариантов цветов и текстур.</div>
-                </div>
-                <span class="red-arrow red-arrow--big"></span>
-              </a><!--item-->
+            <div class="product__col coupe__col">
+              @@include('var/_card__item.html',{
+                "title": "Кухня &quot;Перама&quot;",
+                "price": "187 000 ₽",
+                "img": "card-3.jpg"
+              })
             </div>
           </div>
         </div>
       </div>
-
-      <div class="reviews-text-blue-bg">
-        <div class="reviews__slider-section">
-          <div class="contain contain--slider">
-            <div class="heading">Отзывы клиентов</div>
-            <div class="reviews__slider">
-              @@include('var/_reviews-item.html',{
-                "img":"rev-min-1.jpg"
-              })
-              @@include('var/_reviews-item.html',{
-                "img":"rev-min-2.jpg"
-              })
-              @@include('var/_reviews-item.html',{
-                "img":"rev-min-3.jpg"
-              })
-              @@include('var/_reviews-item.html',{
-                "img":"rev-min-2.jpg"
-              })
-            </div><!--slider-->
+      <div class="bens">
+        @@include('var/_bens.html')
+      </div>
+      <div class="cabinet">
+        <div class="contain">
+          <div class="heading__wrap">
+            <div class="heading">Корпусная мебель</div>
+            <a href="" class="heading__link">Посмотреть все</a>
           </div>
-        </div><!--reviews__slider-section-->      
-
-        <div class="content">
-          <div class="contain">
-            <div class="heading heading--content">Производство кухонь в Санкт-Петербурге, Всеволожске, Колпино</div>    
-            <p>Красивая, практичная и уютная кухня по индивидуальным размерам. Все находится под рукой, мебель экономит место, вы получаете удовольствие от того, что готовите там или просто собирайтесь всей семьей за одним столом. Это то, о чем вы мечтали? Тогда наша мебельная фабрика “Моя кухня” к вашим услугам!</p>
-            <br>
-            <br>
-            <div class="heading heading--content">Приобрести недорогую кухню: это из области фантастики?</div>    
-            <p>Нет, вы действительно можете купить кухню по доступной цене. Гарантия этому – наше личное производство. Мы не перепродаем товар, благодаря чему вы экономите. Один из самых дешевых вариантов стоит всего 40 000 рублей. При этом он соответствует международным стандартам и не уступает по качеству другим моделям.
-            </p>
-            <p>Вообразите, что вам пришлось приобрести кухонную мебель. Что вы делаете в первую очередь? Правильно, идете в стационарный магазин. Там не находите ни одного подходящего варианта. Потом едете в другой салон. Там тоже ничего не нравится. Но вам уже надоело выбирать, да и кухня все-таки нужна, хоть какая-то. Вот вы и покупаете «хоть какую-то». Дополнительно ищите компанию, которые транспортирует и установит кухню. В результате будет счастье, если она точно подойдет по размерам и все коммуникации будут установлены правильно. А в большинстве случаев в конце концов все идет коту под хвост, деньги потрачены, нервы «съедены», сил нет, желания тоже. Кто-то что-то сделал не так, не те замеры, повреждения при транспортировке и тут вы понимаете, что лучше было обратиться к нам.</p>
+          <div class="product__row cabinet__row">
+            <div class="product__col cabinet__col">
+              @@include('var/_card__item.html',{
+                "title": "Кухня &quot;Перама&quot;",
+                "price": "187 000 ₽",
+                "img": "card-1.jpg"
+              })
+            </div>
+            <div class="product__col cabinet__col">
+              @@include('var/_card__item.html',{
+                "title": "Кухня &quot;Перама&quot;",
+                "price": "187 000 ₽",
+                "img": "card-2.jpg"
+              })
+            </div>
+            <div class="product__col cabinet__col">
+              @@include('var/_card__item.html',{
+                "title": "Кухня &quot;Перама&quot;",
+                "price": "187 000 ₽",
+                "img": "card-3.jpg"
+              })
+            </div>
           </div>
-        </div><!--content-->
-      </div><!--reviews-text-blue-bg-->
+        </div>
+      </div>
+    </div><!--gradient-bg-->
+
+    <div class="last-projects">
+      <div class="contain">
+        <div class="heading">Последние выполненные работы</div>
+        <div class="last-projects__row">
+          <div class="last-projects__col">
+            <div class="last-projects__item">
+              <a href="" class="last-projects__img-wrap">
+                <img src="img/last-1.jpg" class="last-projects__img">
+                <span class="red-arrow"></span>
+              </a>
+              <a href="" class="last-projects__title">Кухня "Малия" Яркий и красивый
+              цвет гарнитура</a>
+              <div class="last-projects__text">Собственное производство с современным оборудованием, опытные специалисты на всех этапах создания</div>
+            </div>
+          </div><!--col-->
+          <div class="last-projects__col">
+            <div class="last-projects__item">
+              <a href="" class="last-projects__img-wrap"><img src="img/last-2.jpg" class="last-projects__img"><span class="red-arrow"></span></a>
+              <a href="" class="last-projects__title">Кухня "Малия" Яркий и красивый
+              цвет гарнитура</a>
+              <div class="last-projects__text">Собственное производство с современным оборудованием, опытные специалисты на всех этапах создания</div>
+            </div>
+          </div><!--col-->
+          <div class="last-projects__col">
+            <div class="last-projects__item">
+              <a href="" class="last-projects__img-wrap"><img src="img/last-3.jpg" class="last-projects__img"><span class="red-arrow"></span></a>
+              <a href="" class="last-projects__title">Кухня "Малия" Яркий и красивый
+              цвет гарнитура</a>
+              <div class="last-projects__text">Собственное производство с современным оборудованием, опытные специалисты на всех этапах создания</div>
+            </div>
+          </div><!--col-->
+        </div>
+      </div>
+    </div><!--last-->
+
+    <div class="advantages">
+      @@include('var/_advantages.html')
+    </div>
+
+    <div class="reviews-text-blue-bg">
+      <div class="reviews__slider-section">
+        <div class="contain contain--slider">
+          <div class="heading">Отзывы клиентов</div>
+          <div class="reviews__slider">
+            @@include('var/_reviews-item.html',{
+              "img":"rev-min-1.jpg"
+            })
+            @@include('var/_reviews-item.html',{
+              "img":"rev-min-2.jpg"
+            })
+            @@include('var/_reviews-item.html',{
+              "img":"rev-min-3.jpg"
+            })
+            @@include('var/_reviews-item.html',{
+              "img":"rev-min-2.jpg"
+            })
+          </div><!--slider-->
+        </div>
+      </div><!--reviews__slider-section-->      
+
+      <div class="content">
+        <div class="contain">
+          <div class="heading heading--content">Производство кухонь в Санкт-Петербурге, Всеволожске, Колпино</div>    
+          <p>Красивая, практичная и уютная кухня по индивидуальным размерам. Все находится под рукой, мебель экономит место, вы получаете удовольствие от того, что готовите там или просто собирайтесь всей семьей за одним столом. Это то, о чем вы мечтали? Тогда наша мебельная фабрика “Моя кухня” к вашим услугам!</p>
+          <br>
+          <br>
+          <div class="heading heading--content">Приобрести недорогую кухню: это из области фантастики?</div>    
+          <p>Нет, вы действительно можете купить кухню по доступной цене. Гарантия этому – наше личное производство. Мы не перепродаем товар, благодаря чему вы экономите. Один из самых дешевых вариантов стоит всего 40 000 рублей. При этом он соответствует международным стандартам и не уступает по качеству другим моделям.
+          </p>
+          <p>Вообразите, что вам пришлось приобрести кухонную мебель. Что вы делаете в первую очередь? Правильно, идете в стационарный магазин. Там не находите ни одного подходящего варианта. Потом едете в другой салон. Там тоже ничего не нравится. Но вам уже надоело выбирать, да и кухня все-таки нужна, хоть какая-то. Вот вы и покупаете «хоть какую-то». Дополнительно ищите компанию, которые транспортирует и установит кухню. В результате будет счастье, если она точно подойдет по размерам и все коммуникации будут установлены правильно. А в большинстве случаев в конце концов все идет коту под хвост, деньги потрачены, нервы «съедены», сил нет, желания тоже. Кто-то что-то сделал не так, не те замеры, повреждения при транспортировке и тут вы понимаете, что лучше было обратиться к нам.</p>
+        </div>
+      </div><!--content-->
+    </div><!--reviews-text-blue-bg-->
+    <div class="answers">
       @@include('var/_answers.html')
-      @@include('var/_hform.html')
-      @@include('var/_footer.html')
-
-    </main>
-    <footer class="footer">      
-    </footer>
-  </div>
-  <!--wrapper-->
-  @@include('var/_scripts.html')
+    </div>
+    @@include('var/_hform.html')
+  </main>
+  @@include('var/_footer.html')  
+</div>
+<!--wrapper-->
+@@include('var/_scripts.html')
 </body>
 </html>
 

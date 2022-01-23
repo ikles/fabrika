@@ -32,11 +32,15 @@ $('.eye-3').click(function (e) {
   let pg = parseInt(document.location.pathname.match(/\d+/));
   $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
-
 });
 */
+
 /************************************/
 
+$('.rating__star').click(function () {
+  let starValue = $(this).attr('data-star-value');
+  $(this).parent().attr('data-result-value', starValue);
+});
 
 
 function popup(openLink, windowEl, closeEl) {  
@@ -60,8 +64,11 @@ function popup(openLink, windowEl, closeEl) {
   
 }
 
-popup('.link2', '.modal-overlay_2', '.modal-close_2');
-popup('.link', '.modal-overlay_1', '.modal-close_1');
+popup('.open__modal-1', '.modal-overlay_1', '.modal-close_1');
+popup('.open__modal-2', '.modal-overlay_2', '.modal-close_2');
+
+
+
 
 
 $('a[href*=\\#]:not([href=\\#])').click(function () {
@@ -118,24 +125,57 @@ $('.header__slider').on('afterChange', function(event, slick, currentSlide, next
 });
 
 
-$('.reviews__slider').slick({            
-  infinite: true,
-  centerMode: false,
-  slidesToShow: 3,
-  speed: 600,
-  slidesToScroll: 1,
-  autoplay: false,
-  autoplaySpeed: 4000,
-  cssEase: 'ease-out',
-  dots: false,
-  variableWidth: false,   
+function tabs(element) {    
+  $(element).find('.tabs__list-item').click(function () {
+    $(element).find('.tabs__list-item').removeClass('active');
+    $(this).addClass('active');    
+    let num = $(this).index();
+    $(element).find('.tabs__content-list-item').removeClass('active');
+    $(element).find('.tabs__content-list-item').eq(num).addClass('active');    
+  });  
+}
+
+tabs('.catalog__actions-btns');
+
+$('.catalog__reset-btn').click(function () {
+  $('.catalog__filter-item').removeClass('active');
+  $('.catalog__actions-btn').removeClass('active');    
 });
 
 
-$('.answers__header').click(function () {
-  $(this).toggleClass('active-header');
-  $(this).next().slideToggle().toggleClass('open-content');
-});
+/*    .catalog__actions-btns {}
+    .tabs__list {}
+    .tabs__list-item {}
+    .tabs__link {}
+    .tabs__content-list {}
+    .tabs__content-list-item {}*/
+
+    $('.sproduct-color-lbls-2 .sproduct-color-lbl').click(function () {  
+      let num = $(this).index();
+      $('.sproduct-color-info li').removeClass('active');
+      $('.sproduct-color-info li').eq(num).addClass('active');
+    });
+
+
+
+    $('.reviews__slider').slick({            
+      infinite: true,
+      centerMode: false,
+      slidesToShow: 3,
+      speed: 600,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 4000,
+      cssEase: 'ease-out',
+      dots: false,
+      variableWidth: false,   
+    });
+
+
+    $('.answers__header').click(function () {
+      $(this).toggleClass('active-header');
+      $(this).next().slideToggle().toggleClass('open-content');
+    });
 
 }); //ready
 

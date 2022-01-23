@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3. Карточка</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    <header class="header">      
+      <div class="header__slider-wrap">
+        @@include('var/_header2.html')
+      </div><!--header__slider-wrap-->
+    </header>
+    <main class="main">      
+      <div class="bread">
+        <div class="contain">
+          <ul class="bread__list">
+            <li class="bread__list-item"><a href="" class="bread__link">Главная</a></li>
+            <li class="bread__list-item"><span class="bread__link">Каталог товаров</span></li>
+          </ul>
+        </div>
+      </div><!--bread-->
+
+
+      
+      <div class="reviews__slider-section">
+        <div class="contain contain--slider">
+          <div class="heading">Отзывы клиентов</div>
+          <div class="reviews__slider">
+            @@include('var/_reviews-item.html',{
+              "img":"rev-min-1.jpg"
+            })
+            @@include('var/_reviews-item.html',{
+              "img":"rev-min-2.jpg"
+            })
+            @@include('var/_reviews-item.html',{
+              "img":"rev-min-3.jpg"
+            })
+            @@include('var/_reviews-item.html',{
+              "img":"rev-min-2.jpg"
+            })
+          </div><!--slider-->
+        </div>
+      </div><!--reviews__slider-section-->
+
+
+      <div class="similar">
+        <div class="contain">
+          <div class="heading__wrap">
+            <div class="heading">Похожие кухни</div>
+            <a href="" class="heading__link">Посмотреть все</a>
+          </div>
+          <div class="product__row similar__row">
+            <div class="product__col similar__col">
+              @@include('var/_card__item.html',{
+                "title": "Кухня &quot;Перама&quot;",
+                "price": "187 000 ₽",
+                "img": "card-1.jpg"
+              })
+            </div><!--col-->
+            <div class="product__col similar__col">
+              @@include('var/_card__item.html',{
+                "title": "Кухня &quot;Перама&quot;",
+                "price": "187 000 ₽",
+                "img": "card-1.jpg"
+              })
+            </div><!--col-->
+            <div class="product__col similar__col">
+              @@include('var/_card__item.html',{
+                "title": "Кухня &quot;Перама&quot;",
+                "price": "187 000 ₽",
+                "img": "card-1.jpg"
+              })
+            </div><!--col-->
+          </div><!--similar__row-->
+        </div>
+      </div><!--similar-->
+      @@include('var/_hform.html')
+    </main>    
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+  @@include('var/_scripts.html')
+</body>
+</html>
+

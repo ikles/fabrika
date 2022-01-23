@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>4. Отзывы</title>  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    <header class="header">      
+      <div class="header__slider-wrap">
+        <div class="header__top header__top--fix">
+  <div class="contain">
+    <div class="header__top-inner">
+      <a href="index.html" class="header__logo"><img src="img/logo-top.png" class="logo__img" /></a>
+      <div class="header__right">
+        <div class="header__right-top">
+          <div class="header__info">
+            <div class="header__socials">
+              <a href="#" class="header__social"><img src="img/vk.svg" /></a><a href="#" class="header__social"><img src="img/inst.svg" /></a>
+            </div>
+            <form class="search__form search__form--min"><input class="search__input" type="text" placeholder=" " /><button class="search__button"></button></form>
+           <div class="header__time">с 9:00 до 21:00, Восвресенье - выходной</div>
+            <a href="tel:84955550055" class="header__phone">8 (495) 555-00-55</a>
+            <div class="header__actions">
+              <div class="header__fav"><div class="header__fav-count">0</div></div>              
+            </div>
+          </div>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item nav__item--has-subnav">
+            <a href="#" class="nav__link nav__link--has-arrow">Кухни</a>
+            <ul class="subnav__list">
+              <li class="subnav__item"><a href="#" class="subnav__link">Кухни</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">шкафы купе</a></li>
+              <li class="subnav__item subnav__item--active">
+                <a href="#" class="subnav__link">корпусная мебель</a>
+                <ul class="sub-subnav__list">                    
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">Кухни</a></li>
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">шкафы купе</a></li>
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">корпусная мебель</a></li>
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">о компани</a></li>
+                </ul>
+              </li>
+              <li class="subnav__item"><a href="#" class="subnav__link">о компани</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">Новости</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">Отзывы</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">контакты</a></li>
+            </ul>
+          </li>
+          <li class="nav__item nav__item--has-subnav">
+            <a href="#" class="nav__link nav__link--has-arrow">шкафы купе</a>
+            <ul class="subnav__list">
+              <li class="subnav__item"><a href="#" class="subnav__link">Кухни</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">шкафы купе</a></li>
+              <li class="subnav__item subnav__item--active">
+                <a href="#" class="subnav__link">корпусная мебель</a>
+                <ul class="sub-subnav__list">                    
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">Кухни</a></li>
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">шкафы купе</a></li>
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">корпусная мебель</a></li>
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">о компани</a></li>
+                </ul>
+              </li>
+              <li class="subnav__item"><a href="#" class="subnav__link">о компани</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">Новости</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">Отзывы</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">контакты</a></li>
+            </ul>
+          </li>
+          <li class="nav__item nav__item--has-subnav">
+            <a href="#" class="nav__link nav__link--has-arrow">корпусная мебель</a>
+            <ul class="subnav__list">
+              <li class="subnav__item"><a href="#" class="subnav__link">Кухни</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">шкафы купе</a></li>
+              <li class="subnav__item subnav__item--active">
+                <a href="#" class="subnav__link">корпусная мебель</a>
+                <ul class="sub-subnav__list">                    
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">Кухни</a></li>
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">шкафы купе</a></li>
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">корпусная мебель</a></li>
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">о компани</a></li>
+                </ul>
+              </li>
+              <li class="subnav__item"><a href="#" class="subnav__link">о компани</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">Новости</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">Отзывы</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">контакты</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">о компани</a></li>
+          <li class="nav__item"><a href="#" class="nav__link"> Новости</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      </div><!--header__slider-wrap-->
+    </header>
+    <main class="main">      
+      <div class="bread">
+        <div class="contain">
+          <ul class="bread__list">
+            <li class="bread__list-item"><a href="" class="bread__link">Главная</a></li>
+            <li class="bread__list-item"><span class="bread__link">Каталог товаров</span></li>
+          </ul>
+        </div>
+      </div><!--bread-->
+
+      <div class="reviews">
+       <div class="contain">
+        <div class="reviews__heading heading">Отзывы клиентов</div>
+        <div class="reviews__list">
+               <div class="reviews__item">
+      <div class="reviews__img-w">
+        <img src="img/reviews-noimage.jpg" class="reviews__img" alt="">
+        <svg width="156" height="137" viewBox="0 0 156 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <clipPath id="review-clip">  
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M130.1 101.004C117.175 116.785 103.524 134.104 81.6243 136.295C58.6655 138.593 37.0371 127.192 21.6203 111.86C6.37288 96.697 -1.68585 76.8026 1.65798 56.7702C5.05453 36.422 18.6999 18.4726 38.892 8.38835C59.1565 -1.73214 83.4282 -2.3582 105.225 5.04676C127.68 12.6752 148.893 26.8245 154.275 47.5864C159.388 67.3105 143.469 84.6794 130.1 101.004Z" fill="#C4C4C4"/>
+          </clipPath>
+        </svg>
+      </div>
+      <div class="reviews__content">
+        <div class="reviews__title">Екатерина Романова</div>
+        <div class="reviews__date">21 сентября 2021</div>
+        <div class="reviews__text">
+          Нет, вы действительно можете купить кухню по доступной цене. Гарантия этому – наше личное производство. Мы не перепродаем товар, благодаря чему вы экономите. Один из самых дешевых вариантов стоит всего 40 000 рублей. При этом он
+          соответствует международным стандартам и не уступает по качеству другим моделям.
+        </div>
+        <div class="stars">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star star--empty"></div>
+        </div>
+      </div>
+    </div>
+               <div class="reviews__item">
+      <div class="reviews__img-w">
+        <img src="img/rev-1.jpg" class="reviews__img" alt="">
+        <svg width="156" height="137" viewBox="0 0 156 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <clipPath id="review-clip">  
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M130.1 101.004C117.175 116.785 103.524 134.104 81.6243 136.295C58.6655 138.593 37.0371 127.192 21.6203 111.86C6.37288 96.697 -1.68585 76.8026 1.65798 56.7702C5.05453 36.422 18.6999 18.4726 38.892 8.38835C59.1565 -1.73214 83.4282 -2.3582 105.225 5.04676C127.68 12.6752 148.893 26.8245 154.275 47.5864C159.388 67.3105 143.469 84.6794 130.1 101.004Z" fill="#C4C4C4"/>
+          </clipPath>
+        </svg>
+      </div>
+      <div class="reviews__content">
+        <div class="reviews__title">Екатерина Романова</div>
+        <div class="reviews__date">21 сентября 2021</div>
+        <div class="reviews__text">
+          Нет, вы действительно можете купить кухню по доступной цене. Гарантия этому – наше личное производство. Мы не перепродаем товар, благодаря чему вы экономите. Один из самых дешевых вариантов стоит всего 40 000 рублей. При этом он
+          соответствует международным стандартам и не уступает по качеству другим моделям.
+        </div>
+        <div class="stars">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star star--empty"></div>
+        </div>
+      </div>
+    </div>
+               <div class="reviews__item">
+      <div class="reviews__img-w">
+        <img src="img/rev-1.jpg" class="reviews__img" alt="">
+        <svg width="156" height="137" viewBox="0 0 156 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <clipPath id="review-clip">  
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M130.1 101.004C117.175 116.785 103.524 134.104 81.6243 136.295C58.6655 138.593 37.0371 127.192 21.6203 111.86C6.37288 96.697 -1.68585 76.8026 1.65798 56.7702C5.05453 36.422 18.6999 18.4726 38.892 8.38835C59.1565 -1.73214 83.4282 -2.3582 105.225 5.04676C127.68 12.6752 148.893 26.8245 154.275 47.5864C159.388 67.3105 143.469 84.6794 130.1 101.004Z" fill="#C4C4C4"/>
+          </clipPath>
+        </svg>
+      </div>
+      <div class="reviews__content">
+        <div class="reviews__title">Екатерина Романова</div>
+        <div class="reviews__date">21 сентября 2021</div>
+        <div class="reviews__text">
+          Нет, вы действительно можете купить кухню по доступной цене. Гарантия этому – наше личное производство. Мы не перепродаем товар, благодаря чему вы экономите. Один из самых дешевых вариантов стоит всего 40 000 рублей. При этом он
+          соответствует международным стандартам и не уступает по качеству другим моделям.
+        </div>
+        <div class="stars">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star star--empty"></div>
+        </div>
+      </div>
+    </div>
+               <div class="reviews__item">
+      <div class="reviews__img-w">
+        <img src="img/rev-1.jpg" class="reviews__img" alt="">
+        <svg width="156" height="137" viewBox="0 0 156 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <clipPath id="review-clip">  
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M130.1 101.004C117.175 116.785 103.524 134.104 81.6243 136.295C58.6655 138.593 37.0371 127.192 21.6203 111.86C6.37288 96.697 -1.68585 76.8026 1.65798 56.7702C5.05453 36.422 18.6999 18.4726 38.892 8.38835C59.1565 -1.73214 83.4282 -2.3582 105.225 5.04676C127.68 12.6752 148.893 26.8245 154.275 47.5864C159.388 67.3105 143.469 84.6794 130.1 101.004Z" fill="#C4C4C4"/>
+          </clipPath>
+        </svg>
+      </div>
+      <div class="reviews__content">
+        <div class="reviews__title">Екатерина Романова</div>
+        <div class="reviews__date">21 сентября 2021</div>
+        <div class="reviews__text">
+          Нет, вы действительно можете купить кухню по доступной цене. Гарантия этому – наше личное производство. Мы не перепродаем товар, благодаря чему вы экономите. Один из самых дешевых вариантов стоит всего 40 000 рублей. При этом он
+          соответствует международным стандартам и не уступает по качеству другим моделям.
+        </div>
+        <div class="stars">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star star--empty"></div>
+        </div>
+      </div>
+    </div>
+               <div class="reviews__item">
+      <div class="reviews__img-w">
+        <img src="img/rev-1.jpg" class="reviews__img" alt="">
+        <svg width="156" height="137" viewBox="0 0 156 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <clipPath id="review-clip">  
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M130.1 101.004C117.175 116.785 103.524 134.104 81.6243 136.295C58.6655 138.593 37.0371 127.192 21.6203 111.86C6.37288 96.697 -1.68585 76.8026 1.65798 56.7702C5.05453 36.422 18.6999 18.4726 38.892 8.38835C59.1565 -1.73214 83.4282 -2.3582 105.225 5.04676C127.68 12.6752 148.893 26.8245 154.275 47.5864C159.388 67.3105 143.469 84.6794 130.1 101.004Z" fill="#C4C4C4"/>
+          </clipPath>
+        </svg>
+      </div>
+      <div class="reviews__content">
+        <div class="reviews__title">Екатерина Романова</div>
+        <div class="reviews__date">21 сентября 2021</div>
+        <div class="reviews__text">
+          Нет, вы действительно можете купить кухню по доступной цене. Гарантия этому – наше личное производство. Мы не перепродаем товар, благодаря чему вы экономите. Один из самых дешевых вариантов стоит всего 40 000 рублей. При этом он
+          соответствует международным стандартам и не уступает по качеству другим моделям.
+        </div>
+        <div class="stars">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star star--empty"></div>
+        </div>
+      </div>
+    </div>
+        </div><!--reviews__list-->
+        <div class="addreview">
+          <div class="addreview__heading heading">Добавить отзыв</div>
+          <form class="addreview__form">
+            <div class="addreview__row">
+              <div class="addreview__col"><input class="addreview__input" type="text" placeholder="Ваше имя" required></div>
+              <div class="addreview__col"><input class="addreview__input" type="text" placeholder="Ваш телефон" required></div>
+            </div>
+            <textarea class="addreview__textarea" placeholder="Ваш телефон"></textarea>
+            <div class="addreview__actions">
+              <button class="addreview__btn btn--big">Добавить отзыв</button>
+              <div class="rating__item addreview__stars">                
+                <div class="rating__stars" data-result-value="0">
+                  <div class="rating__star" data-star-value="5"></div>
+                  <div class="rating__star" data-star-value="4"></div>
+                  <div class="rating__star" data-star-value="3"></div>
+                  <div class="rating__star" data-star-value="2"></div>
+                  <div class="rating__star" data-star-value="1"></div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div><!--addreview-->
+      </div>
+    </div><!--reviews-->
+
+
+          <div class="hform">
+        <div class="contain">
+          <div class="hform__inner">
+            <div class="hform__img"><img src="img/form-woman.png" /></div>
+            <div class="hform__content">
+              <div class="hform__heading heading">Онлайн консультация!</div>
+              <p>Задайте их нашему специалисту и получите ответ в течение 15 минут!</p>
+              <form class="hform__form">
+                <div class="hform__row">
+                  <input class="hform__input" type="text" placeholder="Вашe имя" required/>
+                  <input class="hform__input" type="text" placeholder="Ваш телефон" required/>
+                  <button class="hform__btn btn">Задать вопрос</button>
+                </div>
+                <label class="hform__label">
+                  <input type="checkbox">
+                  <span></span>
+                  <div>Обработки персональных данных</div>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="footer">
+  <div class="contain">
+    <div class="footer__top">
+      <div class="footer__col">
+        <div class="footer__title">О компании</div>
+        <ul class="footer__nav">
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">О нас</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Миссия и ценности</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Руководство</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Клиенты и партнеры</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Вакансии</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Новости</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <div class="footer__title">Каталог</div>
+        <ul class="footer__nav">
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Кухни под заказ</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Акционные кухни</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Шкафы купе</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Корпусная мебель</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Акции и скидки</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Расспродажа</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <div class="footer__title">Наши магазины</div>
+        <div class="footer__contacts">
+          <div class="footer__contact-center"><img src="img/geo.svg" class="footer__contact-img" /><span class="footer__contact-text">Санкт-Петербург, ул.Столичная 7А </span></div>
+          <div class="footer__contact"><img src="img/f-phone.svg" class="footer__contact-img" /><a href="tel:88008300008" class="footer__contact-phone">8 800 830-00-08</a></div>
+          <div class="footer__contact"><img src="img/f-mail.svg" class="footer__contact-img" /><a href="mailto:fabrika@gmail.com" class="footer__contact-link">fabrika@gmail.com</a></div>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__contact-center"><img src="img/geo.svg" class="footer__contact-img" /><span class="footer__contact-text">Санкт-Петербург, ул.Столичная 7А </span></div>
+          <div class="footer__contact"><img src="img/f-phone.svg" class="footer__contact-img" /><a href="tel:88008300008" class="footer__contact-phone">8 800 830-00-08</a></div>
+          <div class="footer__contact"><img src="img/f-mail.svg" class="footer__contact-img" /><a href="mailto:fabrika@gmail.com" class="footer__contact-link">fabrika@gmail.com</a></div>
+        </div>
+      </div>
+      <div class="footer__col footer__col--last">
+        <div class="footer__title">Связаться с нами</div>
+        <div class="footer__contacts--big">
+          <div class="footer__contact--big"><img src="img/f-phone-big.svg" class="footer__contact-img--big" /><a href="tel:88008300008" class="footer__contact-link--big">8 800 830-00-08</a></div>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__contact"><img src="img/geo.svg" class="footer__contact-img" /><a href="" class="footer__contact-link">Написать нам</a></div>
+          <div class="footer__contact"><img src="img/f-mail.svg" class="footer__contact-img" /><a href="" class="footer__contact-link">Офисы на карте</a></div>
+        </div>
+        <div class="footer__socials">
+          <a href="" class="footer__social"><img src="img/f-vk.svg" /></a><a href="" class="footer__social"><img src="img/f-inst.svg" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="copy">Copyright © 2021 Fabrica.com</div>
+      <a href="" class="developer">
+        <div class="developer__text">Разработано</div>
+        <img src="img/dev-logo.svg" class="developer__logo" />
+      </a>
+    </div>
+  </div>
+</div>
+
+
+  </main>
+  <footer class="footer">      
+  </footer>
+</div>
+<!--wrapper-->
+<script src="js/jquery-3.4.1.min.js"></script>      
+<script src="js/slick.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
+

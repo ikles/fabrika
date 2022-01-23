@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>4. Отзывы</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    <header class="header">      
+      <div class="header__slider-wrap">
+        @@include('var/_header2.html')
+      </div><!--header__slider-wrap-->
+    </header>
+    <main class="main">      
+      <div class="bread">
+        <div class="contain">
+          <ul class="bread__list">
+            <li class="bread__list-item"><a href="" class="bread__link">Главная</a></li>
+            <li class="bread__list-item"><span class="bread__link">Каталог товаров</span></li>
+          </ul>
+        </div>
+      </div><!--bread-->
+
+      <div class="reviews">
+       <div class="contain">
+        <div class="reviews__heading heading">Отзывы клиентов</div>
+        <div class="reviews__list">
+          @@include('var/_reviews-item-0.html',{
+            "img":"reviews-noimage.jpg"
+          })
+          @@include('var/_reviews-item-0.html',{
+            "img":"rev-1.jpg"
+          })
+          @@include('var/_reviews-item-0.html',{
+            "img":"rev-1.jpg"
+          })
+          @@include('var/_reviews-item-0.html',{
+            "img":"rev-1.jpg"
+          })
+          @@include('var/_reviews-item-0.html',{
+            "img":"rev-1.jpg"
+          })
+        </div><!--reviews__list-->
+        <div class="addreview">
+          <div class="addreview__heading heading">Добавить отзыв</div>
+          <form class="addreview__form">
+            <div class="addreview__row">
+              <div class="addreview__col"><input class="addreview__input" type="text" placeholder="Ваше имя" required></div>
+              <div class="addreview__col"><input class="addreview__input" type="text" placeholder="Ваш телефон" required></div>
+            </div>
+            <textarea class="addreview__textarea" placeholder="Ваш телефон"></textarea>
+            <div class="addreview__actions">
+              <button class="addreview__btn btn--big">Добавить отзыв</button>
+              <div class="rating__item addreview__stars">                
+                <div class="rating__stars" data-result-value="0">
+                  <div class="rating__star" data-star-value="5"></div>
+                  <div class="rating__star" data-star-value="4"></div>
+                  <div class="rating__star" data-star-value="3"></div>
+                  <div class="rating__star" data-star-value="2"></div>
+                  <div class="rating__star" data-star-value="1"></div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div><!--addreview-->
+      </div>
+    </div><!--reviews-->
+    @@include('var/_hform.html')
+  </main>
+  @@include('var/_footer.html')  
+</div>
+<!--wrapper-->
+@@include('var/_scripts.html')
+</body>
+</html>
+

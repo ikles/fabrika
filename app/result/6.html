@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>6. Попапы</title>  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    <header class="header">      
+      <div class="header__slider-wrap">
+        <div class="header__top header__top--fix">
+  <div class="contain">
+    <div class="header__top-inner">
+      <a href="index.html" class="header__logo"><img src="img/logo-top.png" class="logo__img" /></a>
+      <div class="header__right">
+        <div class="header__right-top">
+          <div class="header__info">
+            <div class="header__socials">
+              <a href="#" class="header__social"><img src="img/vk.svg" /></a><a href="#" class="header__social"><img src="img/inst.svg" /></a>
+            </div>
+            <form class="search__form search__form--min"><input class="search__input" type="text" placeholder=" " /><button class="search__button"></button></form>
+           <div class="header__time">с 9:00 до 21:00, Восвресенье - выходной</div>
+            <a href="tel:84955550055" class="header__phone">8 (495) 555-00-55</a>
+            <div class="header__actions">
+              <div class="header__fav"><div class="header__fav-count">0</div></div>              
+            </div>
+          </div>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item nav__item--has-subnav">
+            <a href="#" class="nav__link nav__link--has-arrow">Кухни</a>
+            <ul class="subnav__list">
+              <li class="subnav__item"><a href="#" class="subnav__link">Кухни</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">шкафы купе</a></li>
+              <li class="subnav__item subnav__item--active">
+                <a href="#" class="subnav__link">корпусная мебель</a>
+                <ul class="sub-subnav__list">                    
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">Кухни</a></li>
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">шкафы купе</a></li>
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">корпусная мебель</a></li>
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">о компани</a></li>
+                </ul>
+              </li>
+              <li class="subnav__item"><a href="#" class="subnav__link">о компани</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">Новости</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">Отзывы</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">контакты</a></li>
+            </ul>
+          </li>
+          <li class="nav__item nav__item--has-subnav">
+            <a href="#" class="nav__link nav__link--has-arrow">шкафы купе</a>
+            <ul class="subnav__list">
+              <li class="subnav__item"><a href="#" class="subnav__link">Кухни</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">шкафы купе</a></li>
+              <li class="subnav__item subnav__item--active">
+                <a href="#" class="subnav__link">корпусная мебель</a>
+                <ul class="sub-subnav__list">                    
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">Кухни</a></li>
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">шкафы купе</a></li>
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">корпусная мебель</a></li>
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">о компани</a></li>
+                </ul>
+              </li>
+              <li class="subnav__item"><a href="#" class="subnav__link">о компани</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">Новости</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">Отзывы</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">контакты</a></li>
+            </ul>
+          </li>
+          <li class="nav__item nav__item--has-subnav">
+            <a href="#" class="nav__link nav__link--has-arrow">корпусная мебель</a>
+            <ul class="subnav__list">
+              <li class="subnav__item"><a href="#" class="subnav__link">Кухни</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">шкафы купе</a></li>
+              <li class="subnav__item subnav__item--active">
+                <a href="#" class="subnav__link">корпусная мебель</a>
+                <ul class="sub-subnav__list">                    
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">Кухни</a></li>
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">шкафы купе</a></li>
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">корпусная мебель</a></li>
+                  <li class="sub-subnav__item"><a href="#" class="sub-subnav__link">о компани</a></li>
+                </ul>
+              </li>
+              <li class="subnav__item"><a href="#" class="subnav__link">о компани</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">Новости</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">Отзывы</a></li>
+              <li class="subnav__item"><a href="#" class="subnav__link">контакты</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">о компани</a></li>
+          <li class="nav__item"><a href="#" class="nav__link"> Новости</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      </div><!--header__slider-wrap-->
+    </header>
+    <main class="main">      
+      <div class="contain">
+        <ul class="popup__list">
+          <li><a href="#" class="open__modal-1">Попап 1</a></li>
+          <li><a href="#" class="open__modal-2">Попап 2</a></li>
+        </ul>
+      </div>
+    </main>
+    <div class="footer">
+  <div class="contain">
+    <div class="footer__top">
+      <div class="footer__col">
+        <div class="footer__title">О компании</div>
+        <ul class="footer__nav">
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">О нас</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Миссия и ценности</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Руководство</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Клиенты и партнеры</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Вакансии</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Новости</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <div class="footer__title">Каталог</div>
+        <ul class="footer__nav">
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Кухни под заказ</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Акционные кухни</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Шкафы купе</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Корпусная мебель</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Акции и скидки</a></li>
+          <li class="footer__nav-item"><a href="" class="footer__nav-link">Расспродажа</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <div class="footer__title">Наши магазины</div>
+        <div class="footer__contacts">
+          <div class="footer__contact-center"><img src="img/geo.svg" class="footer__contact-img" /><span class="footer__contact-text">Санкт-Петербург, ул.Столичная 7А </span></div>
+          <div class="footer__contact"><img src="img/f-phone.svg" class="footer__contact-img" /><a href="tel:88008300008" class="footer__contact-phone">8 800 830-00-08</a></div>
+          <div class="footer__contact"><img src="img/f-mail.svg" class="footer__contact-img" /><a href="mailto:fabrika@gmail.com" class="footer__contact-link">fabrika@gmail.com</a></div>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__contact-center"><img src="img/geo.svg" class="footer__contact-img" /><span class="footer__contact-text">Санкт-Петербург, ул.Столичная 7А </span></div>
+          <div class="footer__contact"><img src="img/f-phone.svg" class="footer__contact-img" /><a href="tel:88008300008" class="footer__contact-phone">8 800 830-00-08</a></div>
+          <div class="footer__contact"><img src="img/f-mail.svg" class="footer__contact-img" /><a href="mailto:fabrika@gmail.com" class="footer__contact-link">fabrika@gmail.com</a></div>
+        </div>
+      </div>
+      <div class="footer__col footer__col--last">
+        <div class="footer__title">Связаться с нами</div>
+        <div class="footer__contacts--big">
+          <div class="footer__contact--big"><img src="img/f-phone-big.svg" class="footer__contact-img--big" /><a href="tel:88008300008" class="footer__contact-link--big">8 800 830-00-08</a></div>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__contact"><img src="img/geo.svg" class="footer__contact-img" /><a href="" class="footer__contact-link">Написать нам</a></div>
+          <div class="footer__contact"><img src="img/f-mail.svg" class="footer__contact-img" /><a href="" class="footer__contact-link">Офисы на карте</a></div>
+        </div>
+        <div class="footer__socials">
+          <a href="" class="footer__social"><img src="img/f-vk.svg" /></a><a href="" class="footer__social"><img src="img/f-inst.svg" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="copy">Copyright © 2021 Fabrica.com</div>
+      <a href="" class="developer">
+        <div class="developer__text">Разработано</div>
+        <img src="img/dev-logo.svg" class="developer__logo" />
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+    <div class="modal-overlay modal-overlay_1">        
+      <div class="modal-form__layout"></div>
+      <div class="modal-form__block modal-form__block_1">     
+        <div class="modal-form__inner">
+          <span class="modal-close modal-close_1"></span>
+          <div class="modal-form__title">Вызов дизайнера-замерщика</div>
+          <p>Оставьте свои контактные данные, чтобы мы связались с вами и договорились о приезде нашего специалиста. Замеры производятся с 9:00 до 22:00 ежедневно, включая субботу и воскресенье. Дизайнер привезет образцы материалов и на месте подготовит проект планировки.
+          Выезд мастера, замеры и подготовка проекта осуществляются бесплатно!</p>
+          <form class="modal-form__form">
+            <input class="modal-form__input" type="text" placeholder="Ваше имя" required>
+            <input class="modal-form__input" type="text" placeholder="Телефон" required>
+            <textarea placeholder="Адрес и удобное время замера" class="modal-form__area"></textarea>
+            <div class="modal-form__actions">
+              <button class="modal-form__btn btn--big">Вызвать замерщика</button>
+              <div class="modal-form__info">Выезд, замер и проект —бесплатно</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div><!--modal-overlay-->
+
+    <div class="modal-overlay modal-overlay_2">      
+      <div class="modal-form__layout"></div>
+      <div class="modal-form__block modal-form__block_2">     
+        <div class="modal-form__inner">
+          <span class="modal-close modal-close_2"></span>
+            <div class="modal-form__title">Расчет цены под свой размер</div>
+          <p>Выберите планировку кухни и размер кухонного гарнитура. Наш специалист позвонит вам и назовет стоимость работ.</p>
+          <div class="modal-form__subtitle">Планировка кухни</div>
+          <input class="modal-form__input" type="text" placeholder="Ваше имя" required>
+            <input class="modal-form__input" type="text" placeholder="Телефон" required>
+             <div class="modal-form__btn-w">
+              <button class="modal-form__btn btn--big">РАССЧИТАТЬ СТОИМОСТЬ</button>              
+            </div>
+        </div>
+      </div>
+    </div><!--modal-overlay-->
+
+  </div>
+  <!--wrapper-->
+  <script src="js/jquery-3.4.1.min.js"></script>      
+<script src="js/slick.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
+

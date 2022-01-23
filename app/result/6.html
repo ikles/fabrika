@@ -214,14 +214,54 @@
       <div class="modal-form__block modal-form__block_2">     
         <div class="modal-form__inner">
           <span class="modal-close modal-close_2"></span>
-            <div class="modal-form__title">Расчет цены под свой размер</div>
+          <div class="modal-form__title">Расчет цены под свой размер</div>
           <p>Выберите планировку кухни и размер кухонного гарнитура. Наш специалист позвонит вам и назовет стоимость работ.</p>
           <div class="modal-form__subtitle">Планировка кухни</div>
-          <input class="modal-form__input" type="text" placeholder="Ваше имя" required>
-            <input class="modal-form__input" type="text" placeholder="Телефон" required>
-             <div class="modal-form__btn-w">
-              <button class="modal-form__btn btn--big">РАССЧИТАТЬ СТОИМОСТЬ</button>              
+          
+          <div class="form-area__actions">
+            <label class="form-area__action form-area__action--1">
+              <input type="radio" name="plan">
+              <span></span>
+              <div>Прямая</div>
+            </label>
+            <label class="form-area__action form-area__action--1">
+              <input type="radio" name="plan">
+              <span></span>
+              <div>Угловая (левая)</div>
+            </label>
+            <label class="form-area__action form-area__action--1">
+              <input type="radio" name="plan">
+              <span></span>
+              <div>Угловая (правая)</div>
+            </label>
+            <label class="form-area__action form-area__action--1 active">
+              <input type="radio" name="plan" checked>
+              <span></span>
+              <div>П-образная</div>
+            </label>
+          </div>
+
+          <div class="form-area">
+            <div class="form-area__text">Длины кухонного гарнитура по стенам</div>
+            <div class="form-area__plans">
+              <div class="form-area__plan form-area__plan--1"></div>
+              <div class="form-area__plan form-area__plan--2"></div>
+              <div class="form-area__plan form-area__plan--3"></div>
+              <div class="form-area__plan form-area__plan--4 active">
+                <div class="form-area__figure form-area__figure--4">
+                  <input type="text" class="form-area__input" value="141" name="side1">
+                  <input type="text" class="form-area__input" value="141" name="side2">
+                  <input type="text" class="form-area__input" value="141" name="side3">
+                </div>
+              </div>
             </div>
+
+          </div>
+          <input class="modal-form__input" type="text" placeholder="Ваше имя" required>
+          <input class="modal-form__input" type="text" placeholder="Телефон" required>
+          <div class="modal-form__btn-w">
+            <button class="modal-form__btn-2 btn--big">РАССЧИТАТЬ СТОИМОСТЬ</button>              
+          </div>
         </div>
       </div>
     </div><!--modal-overlay-->

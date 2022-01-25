@@ -5,7 +5,7 @@
   <!--meta name="viewport" content="width=1200px"-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>6. Попапы</title>  
+  <title>6. Контакты</title>  
   @@include('var/_styless.html')
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,97 +23,154 @@
       </div><!--header__slider-wrap-->
     </header>
     <main class="main">      
-      <div class="contain">
-        <ul class="popup__list">
-          <li><a href="#" class="open__modal-1">Попап 1</a></li>
-          <li><a href="#" class="open__modal-2">Попап 2</a></li>
-        </ul>
-      </div>
-    </main>
-    @@include('var/_footer.html')
-
-
-    <div class="modal-overlay modal-overlay_1">        
-      <div class="modal-form__layout"></div>
-      <div class="modal-form__block modal-form__block_1">     
-        <div class="modal-form__inner">
-          <span class="modal-close modal-close_1"></span>
-          <div class="modal-form__title">Вызов дизайнера-замерщика</div>
-          <p>Оставьте свои контактные данные, чтобы мы связались с вами и договорились о приезде нашего специалиста. Замеры производятся с 9:00 до 22:00 ежедневно, включая субботу и воскресенье. Дизайнер привезет образцы материалов и на месте подготовит проект планировки.
-          Выезд мастера, замеры и подготовка проекта осуществляются бесплатно!</p>
-          <form class="modal-form__form">
-            <input class="modal-form__input" type="text" placeholder="Ваше имя" required>
-            <input class="modal-form__input" type="text" placeholder="Телефон" required>
-            <textarea placeholder="Адрес и удобное время замера" class="modal-form__area"></textarea>
-            <div class="modal-form__actions">
-              <button class="modal-form__btn btn--big">Вызвать замерщика</button>
-              <div class="modal-form__info">Выезд, замер и проект —бесплатно</div>
-            </div>
-          </form>
+      <div class="bread">
+        <div class="contain">
+          <ul class="bread__list">
+            <li class="bread__list-item"><a href="" class="bread__link">Главная</a></li>
+            <li class="bread__list-item"><span class="bread__link">Каталог товаров</span></li>
+          </ul>
         </div>
-      </div>
-    </div><!--modal-overlay-->
+      </div><!--bread-->
 
-    <div class="modal-overlay modal-overlay_2">      
-      <div class="modal-form__layout"></div>
-      <div class="modal-form__block modal-form__block_2">     
-        <div class="modal-form__inner">
-          <span class="modal-close modal-close_2"></span>
-          <div class="modal-form__title">Расчет цены под свой размер</div>
-          <p>Выберите планировку кухни и размер кухонного гарнитура. Наш специалист позвонит вам и назовет стоимость работ.</p>
-          <div class="modal-form__subtitle">Планировка кухни</div>
-          
-          <div class="form-area__actions">
-            <label class="form-area__action form-area__action--1">
-              <input type="radio" name="plan">
-              <span></span>
-              <div>Прямая</div>
-            </label>
-            <label class="form-area__action form-area__action--1">
-              <input type="radio" name="plan">
-              <span></span>
-              <div>Угловая (левая)</div>
-            </label>
-            <label class="form-area__action form-area__action--1">
-              <input type="radio" name="plan">
-              <span></span>
-              <div>Угловая (правая)</div>
-            </label>
-            <label class="form-area__action form-area__action--1 active">
-              <input type="radio" name="plan" checked>
-              <span></span>
-              <div>П-образная</div>
-            </label>
+      <div class="contacts">
+       <div class="contain">
+        <div class="contacts__heading heading">Контакты</div>
+        <div class="big-contacts">
+          <div class="big-contact">
+            <img src="img/bcont.svg" class=""><a href="tel:84955550055" class="big-contact__link">8 (495) 555-00-55</a>
           </div>
+          <div class="big-contact">
+            <img src="img/bmail.svg" class=""><a href="mailto:fabrica@gmail.com" class="big-contact__link-2">fabrica@gmail.com</a>
+          </div>
+        </div>
 
-          <div class="form-area">
-            <div class="form-area__text">Длины кухонного гарнитура по стенам</div>
-            <div class="form-area__plans">
-              <div class="form-area__plan form-area__plan--1"></div>
-              <div class="form-area__plan form-area__plan--2"></div>
-              <div class="form-area__plan form-area__plan--3"></div>
-              <div class="form-area__plan form-area__plan--4 active">
-                <div class="form-area__figure form-area__figure--4">
-                  <input type="text" class="form-area__input" value="141" name="side1">
-                  <input type="text" class="form-area__input" value="141" name="side2">
-                  <input type="text" class="form-area__input" value="141" name="side3">
+
+        <div class="conts">
+          <div class="conts__heading heading">Контакты магазинов</div>
+          <div class="conts__items">
+            <div class="conts__col">
+              <div class="conts__item">
+                <div class="conts__shop">Магазин А</div>
+                <div class="conts__loc">Метро черная речка</div>
+                <div class="conts__contacts">
+                  <div class="conts__contact">
+                    <div class="conts__icon-w"><img src="img/phone.png" /></div>
+                    <div class="conts__content">
+                      <div class="conts__title">Телефон</div>
+                      <a href="tel:84955550055" class="conts__link">8 (495) 555-00-55</a>
+                    </div>
+                  </div>
+                  <div class="conts__contact">
+                    <div class="conts__icon-w"><img src="img/f-mail.svg" /></div>
+                    <div class="conts__content">
+                      <div class="conts__title">Почта</div>
+                      <a href="mailto:fabrika@gmail.com" class="conts__link2">fabrika@gmail.com </a>
+                    </div>
+                  </div>
+                  <div class="conts__contact">
+                    <div class="conts__icon-w"><img src="img/geo.svg" /></div>
+                    <div class="conts__content">
+                      <div class="conts__title2">Санкт-Петербург, проспект Московский 10</div>
+                      <div class="conts__text">ст. метро "Черная речка"</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-
+            <!--contacts__item-->
+            <div class="conts__col">
+              <div class="conts__item">
+                <div class="conts__shop">Магазин Б</div>
+                <div class="conts__loc">Метро черная речка</div>
+                <div class="conts__contacts">
+                  <div class="conts__contact">
+                    <div class="conts__icon-w"><img src="img/phone.png" /></div>
+                    <div class="conts__content">
+                      <div class="conts__title">Телефон</div>
+                      <a href="tel:84955550055" class="conts__link">8 (495) 555-00-55</a>
+                    </div>
+                  </div>
+                  <div class="conts__contact">
+                    <div class="conts__icon-w"><img src="img/f-mail.svg" /></div>
+                    <div class="conts__content">
+                      <div class="conts__title">Почта</div>
+                      <a href="mailto:fabrika@gmail.com" class="conts__link2">fabrika@gmail.com </a>
+                    </div>
+                  </div>
+                  <div class="conts__contact">
+                    <div class="conts__icon-w"><img src="img/geo.svg" /></div>
+                    <div class="conts__content">
+                      <div class="conts__title2">Санкт-Петербург, проспект Московский 10</div>
+                      <div class="conts__text">ст. метро "Черная речка"</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="conts__col">
+              <div class="conts__item">
+                <div class="conts__shop">Производство</div>
+                <div class="conts__loc">Метро черная речка</div>
+                <div class="conts__contacts">
+                  <div class="conts__contact">
+                    <div class="conts__icon-w"><img src="img/phone.png" /></div>
+                    <div class="conts__content">
+                      <div class="conts__title">Телефон</div>
+                      <a href="tel:84955550055" class="conts__link">8 (495) 555-00-55</a>
+                    </div>
+                  </div>
+                  <div class="conts__contact">
+                    <div class="conts__icon-w"><img src="img/f-mail.svg" /></div>
+                    <div class="conts__content">
+                      <div class="conts__title">Почта</div>
+                      <a href="mailto:fabrika@gmail.com" class="conts__link2">fabrika@gmail.com </a>
+                    </div>
+                  </div>
+                  <div class="conts__contact">
+                    <div class="conts__icon-w"><img src="img/geo.svg" /></div>
+                    <div class="conts__content">
+                      <div class="conts__title2">Санкт-Петербург, проспект Московский 10</div>
+                      <div class="conts__text">ст. метро "Черная речка"</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <input class="modal-form__input" type="text" placeholder="Ваше имя" required>
-          <input class="modal-form__input" type="text" placeholder="Телефон" required>
-          <div class="modal-form__btn-w">
-            <button class="modal-form__btn-2 btn--big">РАССЧИТАТЬ СТОИМОСТЬ</button>              
+          <!--contacts__items-->
+        </div>
+        <div class="mapblock">
+          <div class="contain">
+            <div class="conts__heading heading">Мы на карте</div>
+            <div class="map" id="map"></div>
           </div>
         </div>
-      </div>
-    </div><!--modal-overlay-->
+        <div class="writeus">
+          <div class="contain">
+            <div class="conts__heading heading">Написать нам</div>
 
-  </div>
-  <!--wrapper-->
-  @@include('var/_scripts.html')
+            <form class="writeus__form">
+              <div class="writeus__row">
+                <div class="writeus__col"><input class="writeus__input" type="text" placeholder="Ваше имя" required=""></div>
+                <div class="writeus__col"><input class="writeus__input" type="text" placeholder="Ваша почта" required=""></div>
+              </div>
+              <textarea class="writeus__textarea" placeholder="Ваше сообщение"></textarea>              
+              <button class="writeus__btn btn--big">ОПТРАВИТЬ</button>
+            </form>
+
+          </div>
+        </div>
+
+
+
+      </div><!--contain-->
+    </div><!--contacts-->
+
+  </main>
+  @@include('var/_footer.html')  
+</div>
+<!--wrapper-->
+@@include('var/_scripts.html')
 </body>
 </html>
 

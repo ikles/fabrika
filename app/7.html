@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>6. Попапы</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    <header class="header">      
+      <div class="header__slider-wrap">
+        @@include('var/_header2.html')
+      </div><!--header__slider-wrap-->
+    </header>
+    <main class="main">      
+      <div class="contain">
+        <ul class="popup__list">
+          <li><a href="#" class="open__modal-1">Попап 1</a></li>
+          <li><a href="#" class="open__modal-2">Попап 2</a></li>
+        </ul>
+      </div>
+    </main>
+    @@include('var/_footer.html')
+
+
+    <div class="modal-overlay modal-overlay_1">        
+      <div class="modal-form__layout"></div>
+      <div class="modal-form__block modal-form__block_1">     
+        <div class="modal-form__inner">
+          <span class="modal-close modal-close_1"></span>
+          <div class="modal-form__title">Вызов дизайнера-замерщика</div>
+          <p>Оставьте свои контактные данные, чтобы мы связались с вами и договорились о приезде нашего специалиста. Замеры производятся с 9:00 до 22:00 ежедневно, включая субботу и воскресенье. Дизайнер привезет образцы материалов и на месте подготовит проект планировки.
+          Выезд мастера, замеры и подготовка проекта осуществляются бесплатно!</p>
+          <form class="modal-form__form">
+            <input class="modal-form__input" type="text" placeholder="Ваше имя" required>
+            <input class="modal-form__input" type="text" placeholder="Телефон" required>
+            <textarea placeholder="Адрес и удобное время замера" class="modal-form__area"></textarea>
+            <div class="modal-form__actions">
+              <button class="modal-form__btn btn--big">Вызвать замерщика</button>
+              <div class="modal-form__info">Выезд, замер и проект —бесплатно</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div><!--modal-overlay-->
+
+    <div class="modal-overlay modal-overlay_2">      
+      <div class="modal-form__layout"></div>
+      <div class="modal-form__block modal-form__block_2">     
+        <div class="modal-form__inner">
+          <span class="modal-close modal-close_2"></span>
+          <div class="modal-form__title">Расчет цены под свой размер</div>
+          <p>Выберите планировку кухни и размер кухонного гарнитура. Наш специалист позвонит вам и назовет стоимость работ.</p>
+          <div class="modal-form__subtitle">Планировка кухни</div>
+          <form class="form-area__form">
+            <div class="form-area__actions">
+              <label class="form-area__action form-area__action--1">
+                <input type="radio" name="plan" value="Прямая">
+                <span></span>
+                <div>Прямая</div>
+              </label>
+              <label class="form-area__action form-area__action--2">
+                <input type="radio" name="plan" value="Угловая (левая)">
+                <span></span>
+                <div>Угловая (левая)</div>
+              </label>
+              <label class="form-area__action form-area__action--3">
+                <input type="radio" name="plan" value="Угловая (правая)">
+                <span></span>
+                <div>Угловая (правая)</div>
+              </label>
+              <label class="form-area__action form-area__action--4 active">
+                <input type="radio" name="plan" value="П-образная" checked>
+                <span></span>
+                <div>П-образная</div>
+              </label>
+            </div>
+
+            <div class="form-area">
+              <div class="form-area__text">Длины кухонного гарнитура по стенам</div>
+              <div class="form-area__plans">
+                <div class="form-area__plan form-area__plan--1 ">
+                  <div class="form-area__figure form-area__figure--1">
+                    <input type="text" class="form-area__input" placeholder="141" name="side1">
+                  </div>
+                </div><!--form-area__plan-->
+                <div class="form-area__plan form-area__plan--2 ">
+                  <div class="form-area__figure form-area__figure--2">
+                    <input type="text" class="form-area__input" placeholder="141" name="side2">
+                    <input type="text" class="form-area__input" placeholder="141" name="side3">
+                  </div>
+                </div><!--form-area__plan-->
+                <div class="form-area__plan form-area__plan--3 ">
+                  <div class="form-area__figure form-area__figure--3">
+                    <input type="text" class="form-area__input" placeholder="141" name="side4">
+                    <input type="text" class="form-area__input" placeholder="141" name="side5">
+                  </div>
+                </div><!--form-area__plan-->
+                <div class="form-area__plan form-area__plan--4 active">
+                  <div class="form-area__figure form-area__figure--4">
+                    <input type="text" class="form-area__input" placeholder="141" name="side6">
+                    <input type="text" class="form-area__input" placeholder="141" name="side7">
+                    <input type="text" class="form-area__input" placeholder="141" name="side8">
+                  </div>
+                </div><!--form-area__plan-->
+              </div>
+
+            </div>
+            <input class="modal-form__input" type="text" placeholder="Ваше имя" required>
+            <input class="modal-form__input" type="text" placeholder="Телефон" required>
+            <div class="modal-form__btn-w">
+              <button class="modal-form__btn-2 btn--big">РАССЧИТАТЬ СТОИМОСТЬ</button></div>
+            </div>
+          </form>
+        </div>
+      </div><!--modal-overlay-->
+
+    </div>
+    <!--wrapper-->
+    @@include('var/_scripts.html')
+  </body>
+  </html>
+

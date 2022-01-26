@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/select2.min.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -120,7 +121,8 @@
 
       </div><!--header__slider-wrap-->
     </header>
-    <main class="main">      
+    <main class="main">
+     <div class="gradient-bg gradient-bg-3">
       <div class="bread">
         <div class="contain">
           <ul class="bread__list">
@@ -130,13 +132,241 @@
         </div>
       </div><!--bread-->
 
+      <div class="card">
+        <div class="contain">
+          <div class="card__wrap">
+            <div class="card_heading heading">Название кухни</div>
+            <div class="cardtop__row">
+              <div class="cardtop__left">
+                <div class="cardtop__img-w">
+                  <img src="img/cardtop-img.jpg" alt="">
+                </div>                
+              </div>
+              <div class="cardtop__right">
+                <div class="cardtop__title">Цена за кухню</div>
+                <div class="cardtop__price-row">
+                  <div class="cardtop__price">187 000 ₽</div>
+                  <div class="cardtop__price-old">200 899 ₽</div>
+                </div>
+                <div class="cardtop__actions">
+                  <a href="#" class="cardtop__btn-action">ХОЧУ ТАКУЮ КУХНЮ</a>
+                  
+                  <div class="cardtop__call">
+                    <div class="cardtop__call-img-w"><img src="img/card-it.svg" /></div>
+                    <div class="cardtop__call-cont">
+                      <div class="cardtop__call-title">Вызвать дизайнера</div>
+                      <span class="cardtop__call-free">бесплатно</span>
+                    </div>
+                  </div>
 
-      
-      <div class="reviews__slider-section">
-        <div class="contain contain--slider">
-          <div class="heading">Отзывы клиентов</div>
-          <div class="reviews__slider">
-            <div class="reviews__item reviews__item--min">
+                </div>
+                <div class="cardtop__chars">
+                  <div class="cardtop__chars-cap">Стиль:<span class="cardtop__char">Современный </span></div>
+                  <div class="cardtop__chars-cap">Форма:<span class="cardtop__char">Прямая</span></div>
+                </div>
+                <div class="cardtop__text">Данный Гарнитур может быть выполнен из любых материалов, представленных в нашей компанией пластик, МДФ, эмаль, шпон, массив, стекло, ЛДСП.</div>
+                <a href="#" class="cardtop__btn btn">рассчитать стоимость под свой размер</a>
+              </div>
+            </div>
+            <div class="cardadvs">
+              <div class="cardadvs__item">
+                <div class="cardadvs__img-w"><img src="img/inf-1.svg" class="adv-img" /></div>
+                <div class="cardadvs__content">
+                  <div class="cardadvs__title">Гарантия</div>
+                  <div class="cardadvs__sub">10 лет</div>
+                </div>
+              </div>
+              <div class="cardadvs__item">
+                <div class="cardadvs__img-w"><img src="img/inf-2.svg" class="adv-img" /></div>
+                <div class="cardadvs__content">
+                  <div class="cardadvs__title">Срок изготовления</div>
+                  <div class="cardadvs__sub">14 дней</div>
+                </div>
+              </div>
+              <div class="cardadvs__item">
+                <div class="cardadvs__img-w"><img src="img/inf-3.svg" class="adv-img" /></div>
+                <div class="cardadvs__content">
+                  <div class="cardadvs__title">Любые размеры</div>
+                  <div class="cardadvs__sub">шаг 3 см</div>
+                </div>
+              </div>
+              <div class="cardadvs__item">
+                <div class="cardadvs__img-w"><img src="img/inf-4.svg" class="adv-img" /></div>
+                <div class="cardadvs__content">
+                  <div class="cardadvs__title">Рассрочка</div>
+                  <div class="cardadvs__sub">0%</div>
+                </div>
+              </div>
+            </div>
+            <div class="carddesc">
+              <div class="carddesc__title"><div class="carddesc__title-text">Описание</div></div>
+              <div class="carddesc__text">
+                Нет, вы действительно можете купить кухню по доступной цене. Гарантия этому – наше личное производство. Мы не перепродаем товар, благодаря чему вы экономите. Один из самых дешевых вариантов стоит всего 40 000 рублей. При
+                этом он соответствует международным стандартам и не уступает по качеству другим моделям.
+              </div>
+            </div>
+            <div class="tabscats__wrap tabs">
+              <ul class="tabscats__tabs tabs__list">
+                <li class="tabscats__tab tabs__list-item active">
+                  <div class="tabscats__text">Фасады</div>
+                  <div class="tabscats-it-img-w"><img src="img/cat-2-11.png" /></div>
+                </li>
+                <li class="tabscats__tab tabs__list-item">
+                  <div class="tabscats__text">Корпусы</div>
+                  <div class="tabscats-it-img-w"><img src="img/cat-2-2.png" /></div>
+                </li>
+                <li class="tabscats__tab tabs__list-item">
+                  <div class="tabscats__text">Столещни</div>
+                  <div class="tabscats-it-img-w"><img src="img/cat-2-3.png" /></div>
+                </li>
+                <li class="tabscats__tab tabs__list-item">
+                  <div class="tabscats__text">Фурнитура</div>
+                  <div class="tabscats-it-img-w"><img src="img/cat-2-4.png" /></div>
+                </li>
+              </ul>
+              <ul class="tabscats__content tabs__content-list">
+                <li class="tabs__content-list-item active">
+                  <div class="tabscats__img-w"><img src="img/mdf.png" /></div>
+                  <div class="tabscats__cont">
+                    <div class="heading">Фасады из МДФ с ПВХ-плёнкой</div>
+                    <div class="tabscats__text">
+                      Мы предлагаем надёжные и влагостойкие плиты МДФ с покрытием ПВХ-плёнкой. МДФ фасады практичнее и удобнее, чем фасады из ДСП. Фасады МДФ не нуждаются в дополнительных защитных мерах, возможна имитация текстуры
+                      ценных пород дерева или камня. Плёнка, покрывающая плиту МДФ, устойчива к царапинам и легко моется.
+                    </div>
+                    <div class="tabscats__advs">
+                      <div class="tabscats__adv">
+                        <div class="tabscats__adv-title">10 лет</div>
+                        <div class="tabscats__adv-text">Минимальный срок cлужбы ПВХ-пленки</div>
+                      </div>
+                      <div class="tabscats__adv">
+                        <div class="tabscats__adv-title">500+</div>
+                        <div class="tabscats__adv-text">Большой выбор цветов <br> и текстур</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="tabs__content-list-item">
+                  <div class="tabscats__img-w"><img src="img/mdf.png" /></div>
+                  <div class="tabscats__cont">
+                    <div class="heading">МДФ с ПВХ-плёнкой</div>
+                    <div class="tabscats__text">
+                      Мы предлагаем надёжные и влагостойкие плиты МДФ с покрытием ПВХ-плёнкой. МДФ фасады практичнее и удобнее, чем фасады из ДСП. Фасады МДФ не нуждаются в дополнительных защитных мерах, возможна имитация текстуры
+                      ценных пород дерева или камня. Плёнка, покрывающая плиту МДФ, устойчива к царапинам и легко моется.
+                    </div>
+                    <div class="tabscats__advs">
+                      <div class="tabscats__adv">
+                        <div class="tabscats__adv-title">10 лет</div>
+                        <div class="tabscats__adv-text">Минимальный срок cлужбы ПВХ-пленки</div>
+                      </div>
+                      <div class="tabscats__adv">
+                        <div class="tabscats__adv-title">500+</div>
+                        <div class="tabscats__adv-text">Большой выбор цветов <br> и текстур</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="tabs__content-list-item">
+                  <div class="tabscats__img-w"><img src="img/mdf.png" /></div>
+                  <div class="tabscats__cont">
+                    <div class="heading">Фасады из МДФ с ПВХ-плёнкой</div>
+                    <div class="tabscats__text">
+                      Мы предлагаем надёжные и влагостойкие плиты МДФ с покрытием ПВХ-плёнкой. МДФ фасады практичнее и удобнее, чем фасады из ДСП. Фасады МДФ не нуждаются в дополнительных защитных мерах, возможна имитация текстуры
+                      ценных пород дерева или камня. Плёнка, покрывающая плиту МДФ, устойчива к царапинам и легко моется.
+                    </div>
+                    <div class="tabscats__advs">
+                      <div class="tabscats__adv">
+                        <div class="tabscats__adv-title">10 лет</div>
+                        <div class="tabscats__adv-text">Минимальный срок cлужбы ПВХ-пленки</div>
+                      </div>
+                      <div class="tabscats__adv">
+                        <div class="tabscats__adv-title">500+</div>
+                        <div class="tabscats__adv-text">Большой выбор цветов и текстур</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="tabs__content-list-item">
+                  <div class="tabscats__img-w"><img src="img/mdf.png" /></div>
+                  <div class="tabscats__cont">
+                    <div class="heading">ПВХ-плёнкой</div>
+                    <div class="tabscats__text">
+                      Мы предлагаем надёжные и влагостойкие плиты МДФ с покрытием ПВХ-плёнкой. МДФ фасады практичнее и удобнее, чем фасады из ДСП. Фасады МДФ не нуждаются в дополнительных защитных мерах, возможна имитация текстуры
+                      ценных пород дерева или камня. Плёнка, покрывающая плиту МДФ, устойчива к царапинам и легко моется.
+                    </div>
+                    <div class="tabscats__advs">
+                      <div class="tabscats__adv">
+                        <div class="tabscats__adv-title">10 лет</div>
+                        <div class="tabscats__adv-text">Минимальный срок cлужбы ПВХ-пленки</div>
+                      </div>
+                      <div class="tabscats__adv">
+                        <div class="tabscats__adv-title">500+</div>
+                        <div class="tabscats__adv-text">Большой выбор цветов <br> и текстур</div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+              </ul><!--cont-->
+            </div>
+          </div>
+          <div class="calc">
+            <div class="calc__left">
+              <div class="calc__top">
+                <div class="calc__heading">Расчёт стоимости кухни</div>
+                <a href="#" class="calc__btn-o">рассрочка 0%</a>
+              </div>
+              <div class="calc__form-w">
+                <form>
+                  <div class="calc__row">
+                    <div class="calc__col">
+                      <div class="calc__label">Форма кухни:</div>
+                      <select class="calc__select">
+                        <option value="Прямая">Прямая</option>
+                        <option value="Угловая">Угловая</option>
+                      </select>
+                    </div>
+                    <div class="calc__col">
+                      <div class="calc__label">Материал:</div>
+                      <select class="calc__select">
+                        <option value="МДФ">МДФ</option>
+                        <option value="Дерево">Дерево</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="calc__row-2">
+                    <div class="calc__col-33">
+                      <div class="calc__label">Длинна А</div>
+                      <input class="calc__input" type="text" placeholder="129" />
+                    </div>
+                    <div class="calc__col-33">
+                      <div class="calc__label">Длинна Б</div>
+                      <input class="calc__input" type="text" placeholder="129" />
+                    </div>
+                    <div class="calc__col-33">
+                      <div class="calc__label">Длинна С</div>
+                      <input class="calc__input" type="text" placeholder="129" />
+                    </div>
+                  </div>
+                  <div class="calc__btn-wrap">
+                    <button class="calc__btn btn">Заказать</button>
+                    <div class="calc__info">Калькулятор рассчитывает стоимость по минимальной комплектации. При заказе дополнительных опций цена может меняться</div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="calc__right"><img src="img/form.png" class="calc__img" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="reviews__slider-section">
+      <div class="contain contain--slider">
+        <div class="heading">Отзывы клиентов</div>
+        <div class="reviews__slider">
+          <div class="reviews__item reviews__item--min">
   <div class="reviews__img-w reviews__img-w--min">
     <img src="img/rev-min-1.jpg" class="reviews__img--min" alt="">
     <svg width="93" height="83" viewBox="0 0 93 83" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -160,7 +390,7 @@
     </div>
   </div>
             </div><!--item-->
-            <div class="reviews__item reviews__item--min">
+          <div class="reviews__item reviews__item--min">
   <div class="reviews__img-w reviews__img-w--min">
     <img src="img/rev-min-2.jpg" class="reviews__img--min" alt="">
     <svg width="93" height="83" viewBox="0 0 93 83" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -184,7 +414,7 @@
     </div>
   </div>
             </div><!--item-->
-            <div class="reviews__item reviews__item--min">
+          <div class="reviews__item reviews__item--min">
   <div class="reviews__img-w reviews__img-w--min">
     <img src="img/rev-min-3.jpg" class="reviews__img--min" alt="">
     <svg width="93" height="83" viewBox="0 0 93 83" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -208,7 +438,7 @@
     </div>
   </div>
             </div><!--item-->
-            <div class="reviews__item reviews__item--min">
+          <div class="reviews__item reviews__item--min">
   <div class="reviews__img-w reviews__img-w--min">
     <img src="img/rev-min-2.jpg" class="reviews__img--min" alt="">
     <svg width="93" height="83" viewBox="0 0 93 83" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -232,97 +462,97 @@
     </div>
   </div>
             </div><!--item-->
-          </div><!--slider-->
-        </div>
-      </div><!--reviews__slider-section-->
+        </div><!--slider-->
+      </div>
+    </div><!--reviews__slider-section-->
 
 
-      <div class="similar">
-        <div class="contain">
-          <div class="heading__wrap">
-            <div class="heading">Похожие кухни</div>
-            <a href="" class="heading__link">Посмотреть все</a>
-          </div>
-          <div class="product__row similar__row">
-            <div class="product__col similar__col">
-              <a href="" class="card__item">
-  <span class="card__top">
-    <label class="card__label">
-      <input type="checkbox">
-      <span></span>                        
-    </label>
-    <span class="card__img-wrap">
-      <img src="img/card-1.jpg" class="card__img" />
-    </span>
-  </span>
-  <span class="card__bottom">
-    <span class="card__title">Кухня &quot;Перама&quot;</span>
-    <span class="card__chars">
-      Стиль: Современный<br />
-      Фасады: Эмаль<br />
-      Форма: Угловые
-    </span>
-    <span class="card__prices"><span class="card__old-price">200 899 ₽</span><span class="card__price">187 000 ₽</span></span>
-    <span class="card__btn-wrap">
-      <span class="btn card__btn">РАССЧИТАТЬ КУХНЮ</span>
-    </span>
-  </span>
-</a>
-            </div><!--col-->
-            <div class="product__col similar__col">
-              <a href="" class="card__item">
-  <span class="card__top">
-    <label class="card__label">
-      <input type="checkbox">
-      <span></span>                        
-    </label>
-    <span class="card__img-wrap">
-      <img src="img/card-1.jpg" class="card__img" />
-    </span>
-  </span>
-  <span class="card__bottom">
-    <span class="card__title">Кухня &quot;Перама&quot;</span>
-    <span class="card__chars">
-      Стиль: Современный<br />
-      Фасады: Эмаль<br />
-      Форма: Угловые
-    </span>
-    <span class="card__prices"><span class="card__old-price">200 899 ₽</span><span class="card__price">187 000 ₽</span></span>
-    <span class="card__btn-wrap">
-      <span class="btn card__btn">РАССЧИТАТЬ КУХНЮ</span>
-    </span>
-  </span>
-</a>
-            </div><!--col-->
-            <div class="product__col similar__col">
-              <a href="" class="card__item">
-  <span class="card__top">
-    <label class="card__label">
-      <input type="checkbox">
-      <span></span>                        
-    </label>
-    <span class="card__img-wrap">
-      <img src="img/card-1.jpg" class="card__img" />
-    </span>
-  </span>
-  <span class="card__bottom">
-    <span class="card__title">Кухня &quot;Перама&quot;</span>
-    <span class="card__chars">
-      Стиль: Современный<br />
-      Фасады: Эмаль<br />
-      Форма: Угловые
-    </span>
-    <span class="card__prices"><span class="card__old-price">200 899 ₽</span><span class="card__price">187 000 ₽</span></span>
-    <span class="card__btn-wrap">
-      <span class="btn card__btn">РАССЧИТАТЬ КУХНЮ</span>
-    </span>
-  </span>
-</a>
-            </div><!--col-->
-          </div><!--similar__row-->
+    <div class="similar">
+      <div class="contain">
+        <div class="heading__wrap">
+          <div class="heading">Похожие кухни</div>
+          <a href="" class="heading__link">Посмотреть все</a>
         </div>
-      </div><!--similar-->
-            <div class="hform">
+        <div class="product__row similar__row">
+          <div class="product__col similar__col">
+            <a href="" class="card__item">
+  <span class="card__top">
+    <label class="card__label">
+      <input type="checkbox">
+      <span></span>                        
+    </label>
+    <span class="card__img-wrap">
+      <img src="img/card-1.jpg" class="card__img" />
+    </span>
+  </span>
+  <span class="card__bottom">
+    <span class="card__title">Кухня &quot;Перама&quot;</span>
+    <span class="card__chars">
+      Стиль: Современный<br />
+      Фасады: Эмаль<br />
+      Форма: Угловые
+    </span>
+    <span class="card__prices"><span class="card__old-price">200 899 ₽</span><span class="card__price">187 000 ₽</span></span>
+    <span class="card__btn-wrap">
+      <span class="btn card__btn">РАССЧИТАТЬ КУХНЮ</span>
+    </span>
+  </span>
+</a>
+          </div><!--col-->
+          <div class="product__col similar__col">
+            <a href="" class="card__item">
+  <span class="card__top">
+    <label class="card__label">
+      <input type="checkbox">
+      <span></span>                        
+    </label>
+    <span class="card__img-wrap">
+      <img src="img/card-1.jpg" class="card__img" />
+    </span>
+  </span>
+  <span class="card__bottom">
+    <span class="card__title">Кухня &quot;Перама&quot;</span>
+    <span class="card__chars">
+      Стиль: Современный<br />
+      Фасады: Эмаль<br />
+      Форма: Угловые
+    </span>
+    <span class="card__prices"><span class="card__old-price">200 899 ₽</span><span class="card__price">187 000 ₽</span></span>
+    <span class="card__btn-wrap">
+      <span class="btn card__btn">РАССЧИТАТЬ КУХНЮ</span>
+    </span>
+  </span>
+</a>
+          </div><!--col-->
+          <div class="product__col similar__col">
+            <a href="" class="card__item">
+  <span class="card__top">
+    <label class="card__label">
+      <input type="checkbox">
+      <span></span>                        
+    </label>
+    <span class="card__img-wrap">
+      <img src="img/card-1.jpg" class="card__img" />
+    </span>
+  </span>
+  <span class="card__bottom">
+    <span class="card__title">Кухня &quot;Перама&quot;</span>
+    <span class="card__chars">
+      Стиль: Современный<br />
+      Фасады: Эмаль<br />
+      Форма: Угловые
+    </span>
+    <span class="card__prices"><span class="card__old-price">200 899 ₽</span><span class="card__price">187 000 ₽</span></span>
+    <span class="card__btn-wrap">
+      <span class="btn card__btn">РАССЧИТАТЬ КУХНЮ</span>
+    </span>
+  </span>
+</a>
+          </div><!--col-->
+        </div><!--similar__row-->
+      </div>
+    </div><!--similar-->
+          <div class="hform">
         <div class="contain">
           <div class="hform__inner">
             <div class="hform__img"><img src="img/form-woman.png" /></div>
@@ -345,8 +575,8 @@
           </div>
         </div>
       </div>
-    </main>    
-    <div class="footer">
+  </main>    
+  <div class="footer">
   <div class="contain">
     <div class="footer__top">
       <div class="footer__col">
@@ -409,11 +639,118 @@
   </div>
 </div>
 
-  </div>
-  <!--wrapper-->
-  <script src="js/jquery-3.4.1.min.js"></script>      
+
+  <div class="modal-overlay modal-overlay_1">        
+    <div class="modal-form__layout"></div>
+    <div class="modal-form__block modal-form__block_1">     
+      <div class="modal-form__inner">
+        <span class="modal-close modal-close_1"></span>
+        <div class="modal-form__title">Вызов дизайнера-замерщика</div>
+        <p>Оставьте свои контактные данные, чтобы мы связались с вами и договорились о приезде нашего специалиста. Замеры производятся с 9:00 до 22:00 ежедневно, включая субботу и воскресенье. Дизайнер привезет образцы материалов и на месте подготовит проект планировки.
+        Выезд мастера, замеры и подготовка проекта осуществляются бесплатно!</p>
+        <form class="modal-form__form">
+          <input class="modal-form__input" type="text" placeholder="Ваше имя" required>
+          <input class="modal-form__input" type="text" placeholder="Телефон" required>
+          <textarea placeholder="Адрес и удобное время замера" class="modal-form__area"></textarea>
+          <div class="modal-form__actions">
+            <button class="modal-form__btn btn--big">Вызвать замерщика</button>
+            <div class="modal-form__info">Выезд, замер и проект —бесплатно</div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div><!--modal-overlay-->
+
+  <div class="modal-overlay modal-overlay_2">      
+    <div class="modal-form__layout"></div>
+    <div class="modal-form__block modal-form__block_2">     
+      <div class="modal-form__inner">
+        <span class="modal-close modal-close_2"></span>
+        <div class="modal-form__title">Расчет цены под свой размер</div>
+        <p>Выберите планировку кухни и размер кухонного гарнитура. Наш специалист позвонит вам и назовет стоимость работ.</p>
+        <div class="modal-form__subtitle">Планировка кухни</div>
+        <form class="form-area__form">
+          <div class="form-area__actions">
+            <label class="form-area__action form-area__action--1">
+              <input type="radio" name="plan" value="Прямая">
+              <span></span>
+              <div>Прямая</div>
+            </label>
+            <label class="form-area__action form-area__action--2">
+              <input type="radio" name="plan" value="Угловая (левая)">
+              <span></span>
+              <div>Угловая (левая)</div>
+            </label>
+            <label class="form-area__action form-area__action--3">
+              <input type="radio" name="plan" value="Угловая (правая)">
+              <span></span>
+              <div>Угловая (правая)</div>
+            </label>
+            <label class="form-area__action form-area__action--4 active">
+              <input type="radio" name="plan" value="П-образная" checked>
+              <span></span>
+              <div>П-образная</div>
+            </label>
+          </div>
+
+          <div class="form-area">
+            <div class="form-area__text">Длины кухонного гарнитура по стенам</div>
+            <div class="form-area__plans">
+              <div class="form-area__plan form-area__plan--1 ">
+                <div class="form-area__figure form-area__figure--1">
+                  <input type="text" class="form-area__input" placeholder="141" name="side1">
+                </div>
+              </div><!--form-area__plan-->
+              <div class="form-area__plan form-area__plan--2 ">
+                <div class="form-area__figure form-area__figure--2">
+                  <input type="text" class="form-area__input" placeholder="141" name="side2">
+                  <input type="text" class="form-area__input" placeholder="141" name="side3">
+                </div>
+              </div><!--form-area__plan-->
+              <div class="form-area__plan form-area__plan--3 ">
+                <div class="form-area__figure form-area__figure--3">
+                  <input type="text" class="form-area__input" placeholder="141" name="side4">
+                  <input type="text" class="form-area__input" placeholder="141" name="side5">
+                </div>
+              </div><!--form-area__plan-->
+              <div class="form-area__plan form-area__plan--4 active">
+                <div class="form-area__figure form-area__figure--4">
+                  <input type="text" class="form-area__input" placeholder="141" name="side6">
+                  <input type="text" class="form-area__input" placeholder="141" name="side7">
+                  <input type="text" class="form-area__input" placeholder="141" name="side8">
+                </div>
+              </div><!--form-area__plan-->
+            </div>
+          </div>
+
+
+          <div class="modal-form__file-wrap">
+
+           <label class="addform_file-label">
+            <input size="40" accept=".html,.html,.pdf,.docx,.doc,.xls,.xlsx,.txt,.jpg,.jpeg,.png"
+            class="multi-file-input" type="file" id="fileMulti" aria-invalid="false">
+            <span class="file__text"><i></i><span class="file__text-span">Прикрепить файлы</span> c эскизом или проектом</span>
+          </label>
+          <div class="img_wrapper">
+          </div>
+
+        </div>
+
+        <input class="modal-form__input" type="text" placeholder="Ваше имя" required>
+        <input class="modal-form__input" type="text" placeholder="Телефон" required>
+        <div class="modal-form__btn-w">
+          <button class="modal-form__btn-2 btn--big">РАССЧИТАТЬ СТОИМОСТЬ</button></div>
+        </div>
+      </form>
+    </div>
+  </div><!--modal-overlay-->
+
+</div>
+<!--wrapper-->
+<script src="js/jquery-3.4.1.min.js"></script>      
 <script src="js/slick.js"></script>
 <script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU&amp;apikey=<e28ccc70-b9f5-4f7b-aec4-03bab1133076>" type="text/javascript"></script>
+<script src="js/select2.min.js"></script>
 <script src="js/placemark.js"></script>
 <script src="js/common.js"></script>
 </body>

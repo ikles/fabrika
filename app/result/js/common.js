@@ -64,8 +64,9 @@ function popup(openLink, windowEl, closeEl) {
   
 }
 
-popup('.open__modal-1', '.modal-overlay_1', '.modal-close_1');
-popup('.open__modal-2', '.modal-overlay_2', '.modal-close_2');
+popup('.cardtop__call', '.modal-overlay_1', '.modal-close_1');
+popup('.cardtop__btn-action', '.modal-overlay_2', '.modal-close_2');
+popup('.cardtop__btn', '.modal-overlay_2', '.modal-close_2');
 
 
 $('.form-area__action').click(function () {
@@ -176,6 +177,10 @@ function tabs(element) {
 }
 
 tabs('.catalog__actions-btns');
+tabs('.tabscats__wrap');
+
+
+
 
 $('.catalog__reset-btn').click(function () {
   $('.catalog__filter-item').removeClass('active');
@@ -209,6 +214,20 @@ $('.catalog__reset-btn').click(function () {
       cssEase: 'ease-out',
       dots: false,
       variableWidth: false,   
+      responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+      ]
     });
 
 
@@ -216,6 +235,33 @@ $('.catalog__reset-btn').click(function () {
       $(this).toggleClass('active-header');
       $(this).next().slideToggle().toggleClass('open-content');
     });
+
+
+    let inputFile = document.querySelector('#fileMulti');
+    let imgWrapper = document.querySelector('.img_wrapper');
+
+
+    function download2(input) {
+      let file = input.files[0];
+
+      let reader = new FileReader();
+      reader.readAsDataURL(file);
+/*  reader.onload = function () {    
+    imgWrapper.innerHTML = file.name;
+  }*/
+  reader.onload = ev => {
+    const src = ev.target.result
+    imgWrapper.innerHTML = `<b>Прикреплен файл:</b> ${file.name}`
+  }
+}
+
+
+if ($('#fileMulti').length) {
+  inputFile.addEventListener("change", function () {
+    download2(this);
+  });
+}
+
 
 }); //ready
 
